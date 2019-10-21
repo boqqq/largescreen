@@ -1,0 +1,21 @@
+server:
+  port: 9001
+
+spring:
+  application:
+    name: development-server
+  profiles:
+    active: dev
+  main:
+    allow-bean-definition-overriding: true
+
+dfjinxin:
+  core:
+    idgenerator:
+      mode: snowflake
+      datacenter: 1
+      worker: 1
+
+# mybaits-plus配置
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*Mapper.xml

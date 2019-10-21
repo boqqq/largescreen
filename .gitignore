@@ -1,0 +1,10 @@
+# Project exclude paths
+/dfjinxin-commons/dfjinxin-commons-auth/target/
+/dfjinxin-commons/dfjinxin-commons-constant/target/
+/dfjinxin-commons/dfjinxin-commons-core/target/
+/dfjinxin-commons/dfjinxin-commons-mybatis/target/
+/dfjinxin-development/development-api/target/
+/dfjinxin-development/development-server/target/
+/dfjinxin-population/population-api/target/
+/dfjinxin-population/population-server/target/
+/tools/dfjinxin-generator/target/

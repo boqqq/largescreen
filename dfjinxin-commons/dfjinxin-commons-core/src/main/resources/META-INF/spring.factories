@@ -1,0 +1,5 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.dfjinxin.commons.core.config.FilterIgnorePropertiesConfig,\
+  com.dfjinxin.commons.core.util.SpringContextHolder,\
+  com.dfjinxin.commons.core.id.IdGeneratorConfiguration,\
+  com.dfjinxin.commons.core.exception.ExceptionHandlerConfiguration

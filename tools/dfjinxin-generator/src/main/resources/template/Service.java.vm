@@ -1,0 +1,19 @@
+package ${package}.${project}.modules.service;
+
+import com.baomidou.mybatisplus.extension.service.IService;
+import com.dfjinxin.commons.core.util.api.PageUtils;
+import ${package}.${project}.api.entity.${className};
+import java.util.Map;
+
+/**
+ * ${comments}
+ *
+ * @author ${author}
+ * @email ${email}
+ * @date ${datetime}
+ */
+public interface ${className}Service extends IService<${className}> {
+
+    PageUtils queryPage(Map<String, Object> params);
+}
+

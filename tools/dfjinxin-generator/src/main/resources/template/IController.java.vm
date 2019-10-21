@@ -1,0 +1,57 @@
+package ${package}.${project}.modules.controller;
+
+import java.util.Map;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import ${package}.${project}.api.entity.${className};
+import org.springframework.cloud.openfeign.FeignClientsConfiguration;
+import com.dfjinxin.commons.core.util.api.Response;
+import org.springframework.cloud.openfeign.FeignClient;
+import com.dfjinxin.${project}.api.FeignClientConfig;
+
+/**
+ * ${comments}
+ *
+ * @author ${author}
+ * @email ${email}
+ * @date ${datetime}
+ */
+@FeignClient(contextId = "${moduleName}_${pathName}",
+        name = FeignClientConfig.NAME, configuration = FeignClientsConfiguration.class)
+@RequestMapping("${moduleName}/${pathName}")
+public interface I${className}Controller {
+
+    /**
+     * 列表
+     */
+    @RequestMapping("/list")
+    Response list(@RequestParam Map<String, Object> params);
+
+
+    /**
+     * 信息
+     */
+    @RequestMapping("/info/{${pk.attrname}}")
+    public Response info(@PathVariable("${pk.attrname}") ${pk.attrType} ${pk.attrname});
+
+    /**
+     * 保存
+     */
+    @RequestMapping("/save")
+    public Response save(@RequestBody ${className} ${classname});
+
+    /**
+     * 修改
+     */
+    @RequestMapping("/update")
+    public Response update(@RequestBody ${className} ${classname});
+
+    /**
+     * 删除
+     */
+    @RequestMapping("/delete")
+    public Response delete(@RequestBody ${pk.attrType}[] ${pk.attrname}s);
+
+}

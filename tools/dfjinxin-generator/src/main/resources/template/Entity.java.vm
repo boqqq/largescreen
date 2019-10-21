@@ -1,0 +1,57 @@
+package ${package}.${project}.modules.entity;
+
+import com.baomidou.mybatisplus.annotation.TableId;
+import lombok.ToString;
+#if(${hasBigDecimal})
+import java.math.BigDecimal;
+#end
+import java.io.Serializable;
+import java.time.LocalDateTime;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.experimental.Accessors;
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.dfjinxin.commons.core.util.LocalDateTimeJsonDeserializer;
+import com.dfjinxin.commons.core.util.LocalDateTimeJsonSerializable;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.annotation.FieldFill;
+
+/**
+ * ${comments}
+ * 
+ * @author ${author}
+ * @email ${email}
+ * @date ${datetime}
+ */
+@Data
+@EqualsAndHashCode(callSuper = false)
+@Accessors(chain = true)
+public class ${className} implements Serializable {
+	private static final long serialVersionUID = 1L;
+
+#foreach ($column in $columns)
+	/**
+	 * $column.comments
+	 */
+	#if($column.columnName == $pk.columnName)
+@TableId(value = "id", type = IdType.INPUT)
+	@ToString.Include
+	private $column.attrType $column.attrname;
+	#elseif($column.columnName == "create_time")
+@TableField(fill = FieldFill.INSERT)
+	@JsonSerialize(using = LocalDateTimeJsonSerializable.class)
+	@JsonDeserialize(using = LocalDateTimeJsonDeserializer.class)
+	private LocalDateTime $column.attrname;
+	#elseif($column.columnName == "update_time")
+@TableField(fill = FieldFill.INSERT)
+	@JsonSerialize(using = LocalDateTimeJsonSerializable.class)
+	@JsonDeserialize(using = LocalDateTimeJsonDeserializer.class)
+	private LocalDateTime $column.attrname;
+	#else
+private $column.attrType $column.attrname;
+#end
+
+#end
+}

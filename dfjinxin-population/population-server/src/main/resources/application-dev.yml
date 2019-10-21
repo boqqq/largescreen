@@ -1,0 +1,17 @@
+# 数据源
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/population?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: 123456
+    hikari:
+      connection-timeout: 20000
+      minimum-idle: 1
+      maximum-pool-size: 5
+      idle-timeout: 10000
+      auto-commit: true
+
+logging:
+  level:
+    com.dfjinxin.population.server.modules.dao: DEBUG
