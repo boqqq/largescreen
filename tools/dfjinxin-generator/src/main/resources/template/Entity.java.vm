@@ -20,7 +20,7 @@ import com.baomidou.mybatisplus.annotation.FieldFill;
 
 /**
  * ${comments}
- * 
+ *
  * @author ${author}
  * @email ${email}
  * @date ${datetime}
@@ -36,7 +36,7 @@ public class ${className} implements Serializable {
 	 * $column.comments
 	 */
 	#if($column.columnName == $pk.columnName)
-@TableId(value = "id", type = IdType.INPUT)
+@TableId(value = "${column.columnName}", type = IdType.INPUT)
 	@ToString.Include
 	private $column.attrType $column.attrname;
 	#elseif($column.columnName == "create_time")

@@ -92,7 +92,7 @@ public class GenUtils {
 
         //没主键，则第一个字段为主键
         if (tableEntity.getPk() == null) {
-            tableEntity.setPk(tableEntity.getColumns().get(0));
+            //tableEntity.setPk(tableEntity.getColumns().get(0));
         }
 
         //设置velocity资源加载器

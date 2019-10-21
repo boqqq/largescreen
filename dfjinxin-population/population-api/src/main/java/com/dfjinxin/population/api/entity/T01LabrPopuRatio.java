@@ -16,44 +16,45 @@ import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.FieldFill;
 
 /**
- * 
- * 
+ * 劳动人口占比及同比
+ *
  * @author zdl
  * @email 492587402@qq.com
- * @date 2019-10-20 03:07:32
+ * @date 2019-10-21 15:23:18
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-public class Test implements Serializable {
+public class T01LabrPopuRatio implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	/**
-	 * 主键ID
-	 */
-	@TableId(value = "id", type = IdType.INPUT)
-	@ToString.Include
-	private Long id;
-	
-	/**
-	 * 用户姓名
-	 */
-	private String name;
+	 * 地域编码
+	private String areaCode;
 
 	/**
-	 * 创建时间
+	 * 地域名称
 	 */
-	@TableField(fill = FieldFill.INSERT)
-	@JsonSerialize(using = LocalDateTimeJsonSerializable.class)
-	@JsonDeserialize(using = LocalDateTimeJsonDeserializer.class)
-	private LocalDateTime createTime;
-	
+	private String areaName;
+
 	/**
-	 * 修改时间
+	 * 日期
 	 */
-	@TableField(fill = FieldFill.INSERT)
-	@JsonSerialize(using = LocalDateTimeJsonSerializable.class)
-	@JsonDeserialize(using = LocalDateTimeJsonDeserializer.class)
-	private LocalDateTime updateTime;
-	
+	private String dateStat;
+
+	/**
+	 * 占比
+	 */
+	private String proportion;
+
+	/**
+	 * 同比
+	 */
+	private String ytyGrowth;
+
+	/**
+	 * 单位
+	 */
+	private String unit;
+
 }

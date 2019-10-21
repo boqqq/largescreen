@@ -6,15 +6,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="development-api" />
-        <module name="development-server" />
-        <module name="dfjinxin-commons-constant" />
-        <module name="dfjinxin-commons-core" />
         <module name="dfjinxin-commons-mybatis" />
-        <module name="dfjinxin-generator" />
+        <module name="development-api" />
+        <module name="dfjinxin-commons-core" />
+        <module name="dfjinxin-commons-constant" />
         <module name="population-api" />
         <module name="population-server" />
+        <module name="development-server" />
+        <module name="dfjinxin-generator" />
       </profile>
     </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="dfjinxin-generator" options="-parameters" />
+    </option>
   </component>
 </project>
