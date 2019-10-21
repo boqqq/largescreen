@@ -40,6 +40,7 @@ public class ${className}Controller implements I${className}Controller{
     }
 
 
+#if(${pk})
     /**
      * 信息
      */
@@ -49,6 +50,7 @@ public class ${className}Controller implements I${className}Controller{
 
         return Response.ok().put("${classname}", ${classname});
     }
+#end
 
     /**
      * 保存
@@ -70,6 +72,7 @@ public class ${className}Controller implements I${className}Controller{
         return Response.ok();
     }
 
+#if(${pk})
     /**
      * 删除
      */
@@ -79,5 +82,6 @@ public class ${className}Controller implements I${className}Controller{
 
         return Response.ok();
     }
+#end
 
 }

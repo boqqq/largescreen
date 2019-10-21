@@ -30,11 +30,13 @@ public interface I${className}Controller {
     Response list(@RequestParam Map<String, Object> params);
 
 
+#if(${pk})
     /**
      * 信息
      */
     @RequestMapping("/info/{${pk.attrname}}")
     public Response info(@PathVariable("${pk.attrname}") ${pk.attrType} ${pk.attrname});
+#end
 
     /**
      * 保存
@@ -48,10 +50,12 @@ public interface I${className}Controller {
     @RequestMapping("/update")
     public Response update(@RequestBody ${className} ${classname});
 
+#if(${pk})
     /**
      * 删除
      */
     @RequestMapping("/delete")
     public Response delete(@RequestBody ${pk.attrType}[] ${pk.attrname}s);
+#end
 
 }
