@@ -37,7 +37,7 @@ public class T01LabrPopuRatioController implements IT01LabrPopuRatioController{
     public Response list(@RequestParam Map<String, Object> params){
         List<T01LabrPopuRatio> T01LabrPopuRatioList = t01LabrPopuRatioService.getList(params);
 
-        return Response.ok().put("ratio", T01LabrPopuRatioList);
+        return Response.ok().put("list", T01LabrPopuRatioList);
     }
 
 

@@ -7,8 +7,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="12c89527-6a0d-4707-ad00-4c0ce35c60a0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/tools/dfjinxin-generator/src/main/resources/template/Controller.java.vm" beforeDir="false" afterPath="$PROJECT_DIR$/tools/dfjinxin-generator/src/main/resources/template/Controller.java.vm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/dfjinxin-generator/src/main/resources/template/IController.java.vm" beforeDir="false" afterPath="$PROJECT_DIR$/tools/dfjinxin-generator/src/main/resources/template/IController.java.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dfjinxin-commons/dfjinxin-commons-core/src/main/java/com/dfjinxin/commons/core/util/WrapperUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/controller/IT04IndsWorkPersMemQtyChgTrndController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/controller/IT04IndsWorkPersMemStru5YrChgController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/controller/IT04RgstRgstTypWorkPersMemStruChgController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/controller/IT04WorkPersMemQtyOcupLabrPopuRatioController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/controller/IT04WorkPopuGrowRateTrndController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/entity/T04IndsWorkPersMemQtyChgTrnd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/entity/T04IndsWorkPersMemStru5YrChg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/entity/T04RgstRgstTypWorkPersMemStruChg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/entity/T04WorkPersMemQtyOcupLabrPopuRatio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/entity/T04WorkPopuGrowRateTrnd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/controller/T04IndsWorkPersMemQtyChgTrndController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/controller/T04IndsWorkPersMemStru5YrChgController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/controller/T04RgstRgstTypWorkPersMemStruChgController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/controller/T04WorkPersMemQtyOcupLabrPopuRatioController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/controller/T04WorkPopuGrowRateTrndController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/dao/T04IndsWorkPersMemQtyChgTrndDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/dao/T04IndsWorkPersMemStru5YrChgDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/dao/T04RgstRgstTypWorkPersMemStruChgDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/dao/T04WorkPersMemQtyOcupLabrPopuRatioDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/dao/T04WorkPopuGrowRateTrndDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/T04IndsWorkPersMemQtyChgTrndService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/T04IndsWorkPersMemStru5YrChgService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/T04RgstRgstTypWorkPersMemStruChgService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/T04WorkPersMemQtyOcupLabrPopuRatioService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/T04WorkPopuGrowRateTrndService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/impl/T04IndsWorkPersMemQtyChgTrndServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/impl/T04IndsWorkPersMemStru5YrChgServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/impl/T04RgstRgstTypWorkPersMemStruChgServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/impl/T04WorkPersMemQtyOcupLabrPopuRatioServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/impl/T04WorkPopuGrowRateTrndServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/controller/T01LabrPopuRatioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/controller/T01LabrPopuRatioController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/impl/T01LabrPopuRatioServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/impl/T01LabrPopuRatioServiceImpl.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/dfjinxin-development/development-server/target/" />
@@ -36,73 +68,40 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dfjinxin-commons/dfjinxin-commons-core/src/main/java/com/dfjinxin/commons/core/exception/ExceptionErrorDecoder.java">
+        <entry file="file://$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/impl/T04WorkPersMemQtyOcupLabrPopuRatioServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            <state relative-caret-position="378">
+              <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="35" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dfjinxin-commons/dfjinxin-commons-core/src/main/java/com/dfjinxin/commons/core/exception/ServiceExceptionHandler.java">
+        <entry file="file://$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/impl/T04IndsWorkPersMemStru5YrChgServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="37" selection-start-line="37" selection-end-line="37" />
+            <state relative-caret-position="396">
+              <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/T01LabrPopuRatioService.java">
+        <entry file="file://$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/impl/T04RgstRgstTypWorkPersMemStruChgServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="26" />
+            <state relative-caret-position="378">
+              <caret line="34" column="46" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/impl/T01LabrPopuRatioServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/impl/T04IndsWorkPersMemQtyChgTrndServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/entity/T01LabrPopuRatio.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tools/dfjinxin-generator/src/main/resources/template/Entity.java.vm">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="39" column="21" lean-forward="true" selection-start-line="38" selection-start-column="60" selection-end-line="39" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tools/dfjinxin-generator/src/main/java/io/dfjinxin/utils/GenUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="94" column="14" selection-start-line="94" selection-start-column="14" selection-end-line="94" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dfjinxin-commons/dfjinxin-commons-core/src/main/java/com/dfjinxin/commons/core/exception/FeignClientError.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="39">
-              <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+            <state relative-caret-position="378">
+              <caret line="34" column="46" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -110,22 +109,77 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/controller/T01LabrPopuRatioController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="684">
-              <caret line="51" column="5" lean-forward="true" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
+            <state relative-caret-position="312">
+              <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="39" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/controller/T04IndsWorkPersMemQtyChgTrndController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="36" selection-end-column="63" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/controller/T04IndsWorkPersMemStru5YrChgController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="394">
+              <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="36" selection-end-column="63" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/controller/T04RgstRgstTypWorkPersMemStruChgController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="36" selection-end-column="63" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/controller/T04WorkPersMemQtyOcupLabrPopuRatioController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="202">
+              <caret line="37" column="8" lean-forward="true" selection-start-line="37" selection-start-column="8" selection-end-line="39" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tools/dfjinxin-generator/src/main/resources/template/IController.java.vm">
+        <entry file="file://$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/controller/T04WorkPopuGrowRateTrndController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+            <state relative-caret-position="36">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -143,11 +197,34 @@
         <option value="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/dao/T01LabrPopuRatioDao.java" />
         <option value="$PROJECT_DIR$/dfjinxin-population/population-server/pom.xml" />
         <option value="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/T01LabrPopuRatioService.java" />
-        <option value="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/impl/T01LabrPopuRatioServiceImpl.java" />
-        <option value="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/controller/T01LabrPopuRatioController.java" />
         <option value="$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/entity/T01LabrPopuRatio.java" />
         <option value="$PROJECT_DIR$/tools/dfjinxin-generator/src/main/java/io/dfjinxin/utils/GenUtils.java" />
         <option value="$PROJECT_DIR$/tools/dfjinxin-generator/src/main/resources/template/Entity.java.vm" />
+        <option value="$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/controller/IT04WorkPersMemQtyOcupLabrPopuRatioController.java" />
+        <option value="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/dao/T04WorkPersMemQtyOcupLabrPopuRatioDao.java" />
+        <option value="$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/entity/T04WorkPersMemQtyOcupLabrPopuRatio.java" />
+        <option value="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/T04WorkPersMemQtyOcupLabrPopuRatioService.java" />
+        <option value="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/impl/T01LabrPopuRatioServiceImpl.java" />
+        <option value="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/controller/T04WorkPersMemQtyOcupLabrPopuRatioController.java" />
+        <option value="$PROJECT_DIR$/dfjinxin-commons/dfjinxin-commons-core/src/main/java/com/dfjinxin/commons/core/util/WrapperUtils.java" />
+        <option value="$PROJECT_DIR$/tools/dfjinxin-generator/src/main/java/io/dfjinxin/dao/T04WorkPopuGrowRateTrndDao.java" />
+        <option value="$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/entity/T04WorkPopuGrowRateTrnd.java" />
+        <option value="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/dao/T04WorkPopuGrowRateTrndDao.java" />
+        <option value="$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/controller/IT04WorkPopuGrowRateTrndController.java" />
+        <option value="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/T04IndsWorkPersMemQtyChgTrndService.java" />
+        <option value="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/T04IndsWorkPersMemStru5YrChgService.java" />
+        <option value="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/T04RgstRgstTypWorkPersMemStruChgService.java" />
+        <option value="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/T04WorkPopuGrowRateTrndService.java" />
+        <option value="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/impl/T04WorkPopuGrowRateTrndServiceImpl.java" />
+        <option value="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/impl/T04WorkPersMemQtyOcupLabrPopuRatioServiceImpl.java" />
+        <option value="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/impl/T04IndsWorkPersMemStru5YrChgServiceImpl.java" />
+        <option value="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/impl/T04RgstRgstTypWorkPersMemStruChgServiceImpl.java" />
+        <option value="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/impl/T04IndsWorkPersMemQtyChgTrndServiceImpl.java" />
+        <option value="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/controller/T01LabrPopuRatioController.java" />
+        <option value="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/controller/T04IndsWorkPersMemQtyChgTrndController.java" />
+        <option value="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/controller/T04IndsWorkPersMemStru5YrChgController.java" />
+        <option value="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/controller/T04RgstRgstTypWorkPersMemStruChgController.java" />
+        <option value="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/controller/T04WorkPopuGrowRateTrndController.java" />
       </list>
     </option>
   </component>
@@ -176,6 +253,9 @@
     <option name="y" value="170" />
     <option name="width" value="1868" />
     <option name="height" value="1096" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -245,7 +325,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="exception" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dfjinxin-largescreen" type="b2602c69:ProjectViewProjectNode" />
@@ -387,6 +467,18 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
               <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dfjinxin-largescreen" type="b2602c69:ProjectViewProjectNode" />
+              <item name="largescreen" type="462c0819:PsiDirectoryNode" />
+              <item name="dfjinxin-population" type="462c0819:PsiDirectoryNode" />
+              <item name="population-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -402,90 +494,6 @@
               <item name="service" type="462c0819:PsiDirectoryNode" />
               <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="dfjinxin-largescreen" type="b2602c69:ProjectViewProjectNode" />
-              <item name="largescreen" type="462c0819:PsiDirectoryNode" />
-              <item name="dfjinxin-population" type="462c0819:PsiDirectoryNode" />
-              <item name="population-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dfjinxin-largescreen" type="b2602c69:ProjectViewProjectNode" />
-              <item name="largescreen" type="462c0819:PsiDirectoryNode" />
-              <item name="tools" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dfjinxin-largescreen" type="b2602c69:ProjectViewProjectNode" />
-              <item name="largescreen" type="462c0819:PsiDirectoryNode" />
-              <item name="tools" type="462c0819:PsiDirectoryNode" />
-              <item name="dfjinxin-generator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dfjinxin-largescreen" type="b2602c69:ProjectViewProjectNode" />
-              <item name="largescreen" type="462c0819:PsiDirectoryNode" />
-              <item name="tools" type="462c0819:PsiDirectoryNode" />
-              <item name="dfjinxin-generator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dfjinxin-largescreen" type="b2602c69:ProjectViewProjectNode" />
-              <item name="largescreen" type="462c0819:PsiDirectoryNode" />
-              <item name="tools" type="462c0819:PsiDirectoryNode" />
-              <item name="dfjinxin-generator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dfjinxin-largescreen" type="b2602c69:ProjectViewProjectNode" />
-              <item name="largescreen" type="462c0819:PsiDirectoryNode" />
-              <item name="tools" type="462c0819:PsiDirectoryNode" />
-              <item name="dfjinxin-generator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dfjinxin-largescreen" type="b2602c69:ProjectViewProjectNode" />
-              <item name="largescreen" type="462c0819:PsiDirectoryNode" />
-              <item name="tools" type="462c0819:PsiDirectoryNode" />
-              <item name="dfjinxin-generator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dfjinxin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dfjinxin-largescreen" type="b2602c69:ProjectViewProjectNode" />
-              <item name="largescreen" type="462c0819:PsiDirectoryNode" />
-              <item name="tools" type="462c0819:PsiDirectoryNode" />
-              <item name="dfjinxin-generator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dfjinxin" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dfjinxin-largescreen" type="b2602c69:ProjectViewProjectNode" />
-              <item name="largescreen" type="462c0819:PsiDirectoryNode" />
-              <item name="tools" type="462c0819:PsiDirectoryNode" />
-              <item name="dfjinxin-generator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dfjinxin-largescreen" type="b2602c69:ProjectViewProjectNode" />
-              <item name="largescreen" type="462c0819:PsiDirectoryNode" />
-              <item name="tools" type="462c0819:PsiDirectoryNode" />
-              <item name="dfjinxin-generator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="template" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -500,11 +508,11 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/tools/dfjinxin-generator/src/main/resources/template" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/impl" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\workspace\largescreen\tools\dfjinxin-generator\src\main\resources\template" />
+      <recent name="D:\workspace\largescreen\dfjinxin-population\population-server\src\main\java\com\dfjinxin\population\server\modules\service\impl" />
       <recent name="D:\workspace\largescreen\dfjinxin-population\population-server\src\main\java\com\dfjinxin\population\server\modules\service" />
       <recent name="D:\workspace\largescreen\dfjinxin-population\population-api\src\main\java\com\dfjinxin\population\api\entity" />
       <recent name="D:\workspace\largescreen\dfjinxin-population\population-server\src\main\java\com\dfjinxin\population\server\modules\dao" />
@@ -639,12 +647,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571639957556</updated>
-      <workItem from="1571639959001" duration="7767000" />
+      <workItem from="1571639959001" duration="11558000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7767000" />
+    <option name="totallyTimeSpent" value="11558000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1310" height="784" extended-state="6" />
@@ -656,7 +664,7 @@
       <window_info id="UI Designer" />
       <window_info id="Favorites" side_tool="true" />
       <window_info id="Web" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3368" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3368" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Application Servers" order="0" weight="0.3290735" />
       <window_info anchor="bottom" id="GraphQL" order="1" />
@@ -671,7 +679,7 @@
       <window_info anchor="bottom" id="Find" order="10" />
       <window_info anchor="bottom" id="Spring" order="11" weight="0.3290735" />
       <window_info anchor="bottom" id="Run" order="12" weight="0.33865815" />
-      <window_info anchor="bottom" id="Debug" order="13" weight="0.55271566" />
+      <window_info active="true" anchor="bottom" id="Debug" order="13" visible="true" weight="0.46964857" />
       <window_info anchor="bottom" id="Cvs" order="14" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="15" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="16" />
@@ -697,7 +705,7 @@
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Application Servers" order="0" weight="0.3290735" />
       <window_info anchor="bottom" id="GraphQL" order="1" />
-      <window_info anchor="bottom" id="Terminal" order="2" weight="0.3290735" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.6485623" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="5" weight="0.3290735" />
@@ -708,7 +716,7 @@
       <window_info anchor="bottom" id="Find" order="10" />
       <window_info anchor="bottom" id="Spring" order="11" weight="0.3290735" />
       <window_info anchor="bottom" id="Run" order="12" weight="0.33865815" />
-      <window_info anchor="bottom" id="Debug" order="13" weight="0.55271566" />
+      <window_info anchor="bottom" id="Debug" order="13" weight="0.46964857" />
       <window_info anchor="bottom" id="Cvs" order="14" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="15" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="16" />
@@ -740,54 +748,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dfjinxin-development/development-server/src/main/resources/application-dev.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dfjinxin-development/development-server/src/main/java/com/dfjinxin/development/server/modules/controller/TestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dfjinxin-development/development-api/src/main/java/com/dfjinxin/development/api/entity/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-70">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dfjinxin-development/development-api/src/main/java/com/dfjinxin/development/api/controller/ITestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="39" column="35" selection-start-line="39" selection-start-column="35" selection-end-line="40" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tools/dfjinxin-generator/src/main/java/io/dfjinxin/DfjinxinGerApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tools/dfjinxin-generator/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/controller/IT06PopuAgeMidDigitChgTrndController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tools/dfjinxin-generator/src/main/resources/generator.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/dao/T01LabrPopuRatioDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -885,13 +845,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/PopulationServerApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dfjinxin-commons/dfjinxin-commons-core/src/main/java/com/dfjinxin/commons/core/exception/ExceptionErrorDecoder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -913,20 +866,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/T01LabrPopuRatioService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/impl/T01LabrPopuRatioServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/entity/T01LabrPopuRatio.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -944,21 +883,241 @@
     <entry file="file://$PROJECT_DIR$/tools/dfjinxin-generator/src/main/resources/template/Entity.java.vm">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
-          <caret line="39" column="21" lean-forward="true" selection-start-line="38" selection-start-column="60" selection-end-line="39" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/controller/T01LabrPopuRatioController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="51" column="5" lean-forward="true" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
+          <caret line="39" column="21" selection-start-line="38" selection-start-column="60" selection-end-line="39" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tools/dfjinxin-generator/src/main/resources/template/IController.java.vm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+        <state relative-caret-position="56">
+          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/dao/T04WorkPersMemQtyOcupLabrPopuRatioDao.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/entity/T04WorkPersMemQtyOcupLabrPopuRatio.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/PopulationServerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/dfjinxin-generator/src/main/resources/template/add-or-update.vue.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="58" column="47" selection-start-line="58" selection-start-column="36" selection-end-line="58" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/controller/IT04WorkPersMemQtyOcupLabrPopuRatioController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="29" column="31" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dfjinxin-commons/dfjinxin-commons-core/src/main/java/com/dfjinxin/commons/core/util/WrapperUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/dfjinxin-generator/src/main/java/io/dfjinxin/dao/T04WorkPopuGrowRateTrndDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/dao/T04WorkPopuGrowRateTrndDao.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/entity/T04WorkPopuGrowRateTrnd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/controller/IT04WorkPopuGrowRateTrndController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/dao/T04IndsWorkPersMemQtyChgTrndDao.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/entity/T04IndsWorkPersMemQtyChgTrnd.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/impl/T01LabrPopuRatioServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="26" column="52" selection-start-line="26" selection-start-column="52" selection-end-line="26" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/T01LabrPopuRatioService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="20" column="17" selection-start-line="20" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/T04IndsWorkPersMemQtyChgTrndService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-end-line="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/T04IndsWorkPersMemStru5YrChgService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-end-line="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/T04RgstRgstTypWorkPersMemStruChgService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="22" lean-forward="true" selection-start-line="20" selection-end-line="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/T04WorkPersMemQtyOcupLabrPopuRatioService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="21" selection-start-line="20" selection-end-line="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/T04WorkPopuGrowRateTrndService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/impl/T06PopuAgeMidDigitChgTrndServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/impl/T04WorkPopuGrowRateTrndServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="34" column="46" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/impl/T04IndsWorkPersMemStru5YrChgServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/impl/T04RgstRgstTypWorkPersMemStruChgServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="34" column="46" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/impl/T04WorkPersMemQtyOcupLabrPopuRatioServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="35" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/impl/T04IndsWorkPersMemQtyChgTrndServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="34" column="46" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/controller/T01LabrPopuRatioController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="39" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/controller/T04IndsWorkPersMemQtyChgTrndController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="36" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/controller/T04IndsWorkPersMemStru5YrChgController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="36" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/controller/T04RgstRgstTypWorkPersMemStruChgController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="36" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/controller/T04WorkPersMemQtyOcupLabrPopuRatioController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="37" column="8" lean-forward="true" selection-start-line="37" selection-start-column="8" selection-end-line="39" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/controller/T04WorkPopuGrowRateTrndController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
