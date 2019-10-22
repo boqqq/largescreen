@@ -29,6 +29,11 @@ public interface IT07PersRecvEduYrsPersGdpRelController {
     @RequestMapping("/list")
     Response list(@RequestParam Map<String, Object> params);
 
+    /**
+     * 人均受教育年限与人均GDP关系演变
+     */
+    @RequestMapping("/select")
+    Response select(@RequestParam Map<String, Object> params);
 
 
     /**

@@ -11,7 +11,7 @@ import lombok.experimental.Accessors;
  *
  * @author zdl
  * @email 492587402@qq.com
- * @date 2019-10-22 10:05:50
+ * @date 2019-10-22 11:09:22
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -39,6 +39,11 @@ public class T07QltyFstNm implements Serializable {
 	 * 空气质量排名
 	 */
 	private String qltyFstNm;
+
+	/**
+	 * 优级天数
+	 */
+	private String practitionerNum;
 
 	/**
 	 * 统计单位
