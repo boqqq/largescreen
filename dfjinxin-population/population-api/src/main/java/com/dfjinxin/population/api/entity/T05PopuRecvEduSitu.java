@@ -5,51 +5,48 @@ import java.io.Serializable;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.FieldFill;
 
 /**
- * 劳动人口占比及同比
+ *
  *
  * @author zdl
  * @email 492587402@qq.com
- * @date 2019-10-22 09:36:11
+ * @date 2019-10-22 10:15:38
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-@TableName("t01_labr_popu_ratio")
-public class T01LabrPopuRatio implements Serializable {
+@TableName("t05_popu_recv_edu_situ")
+public class T05PopuRecvEduSitu implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	/**
-	 * 地域编码
+	 * 区域编码
 	 */
 	private String areaCode;
 
 	/**
-	 * 地域名称
+	 * 区域名称
 	 */
 	private String areaName;
 
 	/**
-	 * 日期
+	 * 统计年份
 	 */
 	private String dateStat;
 
 	/**
-	 * 占比
+	 * 百分比
 	 */
-	private String proportion;
+	private String illRadio;
 
 	/**
-	 * 同比
+	 * 统计类型
 	 */
-	private String ytyGrowth;
+	private String educatedYear;
 
 	/**
-	 * 单位
+	 * 统计单位
 	 */
 	private String unit;
 

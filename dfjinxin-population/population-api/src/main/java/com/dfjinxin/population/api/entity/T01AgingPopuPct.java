@@ -10,18 +10,23 @@ import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.FieldFill;
 
 /**
- * 劳动人口占比及同比
+ * 老龄人口占比
  *
  * @author zdl
  * @email 492587402@qq.com
- * @date 2019-10-22 09:36:11
+ * @date 2019-10-22 09:36:24
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-@TableName("t01_labr_popu_ratio")
-public class T01LabrPopuRatio implements Serializable {
+@TableName("t01_aging_popu_pct")
+public class T01AgingPopuPct implements Serializable {
 	private static final long serialVersionUID = 1L;
+
+	/**
+	 * 日期
+	 */
+	private String dateStat;
 
 	/**
 	 * 地域编码
@@ -34,23 +39,13 @@ public class T01LabrPopuRatio implements Serializable {
 	private String areaName;
 
 	/**
-	 * 日期
-	 */
-	private String dateStat;
-
-	/**
-	 * 占比
-	 */
-	private String proportion;
-
-	/**
-	 * 同比
-	 */
-	private String ytyGrowth;
-
-	/**
 	 * 单位
 	 */
 	private String unit;
+
+	/**
+	 * 人口占比
+	 */
+	private String ytyGrowth;
 
 }

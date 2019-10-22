@@ -7,32 +7,32 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import com.dfjinxin.population.api.entity.T01LabrPopuRatio;
-import com.dfjinxin.population.server.modules.service.T01LabrPopuRatioService;
+import com.dfjinxin.population.api.entity.T01LiqdPopu;
+import com.dfjinxin.population.server.modules.service.T01LiqdPopuService;
 import com.dfjinxin.commons.core.util.api.Response;
-import com.dfjinxin.population.api.controller.IT01LabrPopuRatioController;
+import com.dfjinxin.population.api.controller.IT01LiqdPopuController;
 
 
 
 /**
- * 劳动人口占比及同比
+ * 流动人口
  *
  * @author zdl
  * @email 492587402@qq.com
- * @date 2019-10-22 09:36:11
+ * @date 2019-10-22 09:36:04
  */
 @RestController
-public class T01LabrPopuRatioController implements IT01LabrPopuRatioController{
+public class T01LiqdPopuController implements IT01LiqdPopuController{
 
     @Autowired
-    private T01LabrPopuRatioService t01LabrPopuRatioService;
+    private T01LiqdPopuService t01LiqdPopuService;
 
     /**
      * 列表
      */
     @Override
     public Response list(@RequestParam Map<String, Object> params){
-        List<T01LabrPopuRatio> list = t01LabrPopuRatioService.getList(params);
+        List<T01LiqdPopu> list = t01LiqdPopuService.getList(params);
 
         return Response.ok().put("list", list);
     }
@@ -43,8 +43,8 @@ public class T01LabrPopuRatioController implements IT01LabrPopuRatioController{
      * 保存
      */
     @Override
-    public Response save(@RequestBody T01LabrPopuRatio t01LabrPopuRatio){
-		t01LabrPopuRatioService.save(t01LabrPopuRatio);
+    public Response save(@RequestBody T01LiqdPopu t01LiqdPopu){
+		t01LiqdPopuService.save(t01LiqdPopu);
 
         return Response.ok();
     }
@@ -53,8 +53,8 @@ public class T01LabrPopuRatioController implements IT01LabrPopuRatioController{
      * 修改
      */
     @Override
-    public Response update(@RequestBody T01LabrPopuRatio t01LabrPopuRatio){
-		t01LabrPopuRatioService.updateById(t01LabrPopuRatio);
+    public Response update(@RequestBody T01LiqdPopu t01LiqdPopu){
+		t01LiqdPopuService.updateById(t01LiqdPopu);
 
         return Response.ok();
     }
