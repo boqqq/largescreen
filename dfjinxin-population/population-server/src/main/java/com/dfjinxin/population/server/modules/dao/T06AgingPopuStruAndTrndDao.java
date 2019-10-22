@@ -1,7 +1,7 @@
 package com.dfjinxin.population.server.modules.dao;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.dfjinxin.population.api.entity.T06PopuAgeMidDigitChgTrnd;
+import com.dfjinxin.population.api.entity.T06AgingPopuStruAndTrnd;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 import org.springframework.stereotype.Repository;
@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 /**
- * 人口年龄中位数变化趋势
+ * 老龄人口结构与趋势
  * 
  * @author zdl
  * @email 492587402@qq.com
@@ -17,10 +17,10 @@ import java.util.List;
  */
 @Repository
 @Mapper
-public interface T06PopuAgeMidDigitChgTrndDao extends BaseMapper<T06PopuAgeMidDigitChgTrnd> {
+public interface T06AgingPopuStruAndTrndDao extends BaseMapper<T06AgingPopuStruAndTrnd> {
 
-    @Select("SELECT t.date_stat,t.unit,t.middle_cnt,t.popu_type from t06_popu_age_mid_digit_chg_trnd t \n" +
-            "GROUP BY t.popu_type,t.date_stat\n" +
+    @Select("SELECT t.date_stat,t.unit,t.unit_type,t.yty_growth,t.popu_total FROM t06_aging_popu_stru_and_trnd t\n" +
+            "GROUP BY t.unit_type,t.date_stat\n" +
             "ORDER BY t.date_stat")
-    List<T06PopuAgeMidDigitChgTrnd> select();
+    List<T06AgingPopuStruAndTrnd> select();
 }
