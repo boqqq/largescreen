@@ -5,18 +5,19 @@ import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 
 /**
- * 人口年龄中位数变化趋势
+ * 老龄人口结构与趋势
  *
  * @author zdl
  * @email 492587402@qq.com
- * @date 2019-10-21 17:10:02
+ * @date 2019-10-21 18:59:00
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-public class T06PopuAgeMidDigitChgTrnd implements Serializable {
+public class T06AgingPopuStruAndTrnd implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	/**
@@ -40,13 +41,18 @@ public class T06PopuAgeMidDigitChgTrnd implements Serializable {
 	private String unit;
 
 	/**
-	 * 年龄中位数
+	 * 人口占比
 	 */
-	private Integer middleCnt;
+	private String ytyGrowth;
 
 	/**
-	 * 常住/户籍人口
+	 * 人口数量
 	 */
-	private String popuType;
+	private BigDecimal popuTotal;
+
+	/**
+	 * 指标维度
+	 */
+	private String unitType;
 
 }

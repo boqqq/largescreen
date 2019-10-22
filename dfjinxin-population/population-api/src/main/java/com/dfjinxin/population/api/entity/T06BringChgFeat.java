@@ -7,16 +7,16 @@ import lombok.experimental.Accessors;
 import java.io.Serializable;
 
 /**
- * 人口年龄中位数变化趋势
+ * 老年抚养比变化特征
  *
  * @author zdl
  * @email 492587402@qq.com
- * @date 2019-10-21 17:10:02
+ * @date 2019-10-21 18:47:52
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-public class T06PopuAgeMidDigitChgTrnd implements Serializable {
+public class T06BringChgFeat implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	/**
@@ -40,13 +40,8 @@ public class T06PopuAgeMidDigitChgTrnd implements Serializable {
 	private String unit;
 
 	/**
-	 * 年龄中位数
+	 * 同比增长率
 	 */
-	private Integer middleCnt;
-
-	/**
-	 * 常住/户籍人口
-	 */
-	private String popuType;
+	private String ytyGrowth;
 
 }
