@@ -6,118 +6,20 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="12c89527-6a0d-4707-ad00-4c0ce35c60a0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/controller/IT01AgingPopuPctController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/controller/IT01HousdRgstPopuController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/controller/IT01HousdRgstPopuGrowRateController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/controller/IT01LiqdPopuAndGrowRateController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/controller/IT01LiqdPopuController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/controller/IT01PrmnPopuAgeMidDigitController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/controller/IT01PrmnPopuAndGrowRateController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/controller/IT01PrmnPopuController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/controller/IT05BasicPubCultController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/controller/IT05ChrnBrSituController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/controller/IT05FamilyEgrCoefController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/controller/IT05MdclHlthServController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/controller/IT05PersCapInvstController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/controller/IT05PopuLabrWorkController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/controller/IT05PopuRecvEduSituController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/controller/IT05ReseaAchieSituController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/controller/IT05RsdntGoverIncomController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/entity/T01AgingPopuPct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/entity/T01HousdRgstPopu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/entity/T01HousdRgstPopuGrowRate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/entity/T01LiqdPopu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/entity/T01LiqdPopuAndGrowRate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/entity/T01PrmnPopu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/entity/T01PrmnPopuAgeMidDigit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/entity/T01PrmnPopuAndGrowRate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/entity/T05BasicPubCult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/entity/T05ChrnBrSitu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/entity/T05FamilyEgrCoef.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/entity/T05MdclHlthServ.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/entity/T05PersCapInvst.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/entity/T05PopuLabrWork.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/entity/T05PopuRecvEduSitu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/entity/T05ReseaAchieSitu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/entity/T05RsdntGoverIncom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/controller/T01AgingPopuPctController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/controller/T01HousdRgstPopuController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/controller/T01HousdRgstPopuGrowRateController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/controller/T01LiqdPopuAndGrowRateController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/controller/T01LiqdPopuController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/controller/T01PrmnPopuAgeMidDigitController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/controller/T01PrmnPopuAndGrowRateController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/controller/T01PrmnPopuController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/controller/T05BasicPubCultController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/controller/T05ChrnBrSituController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/controller/T05FamilyEgrCoefController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/controller/T05MdclHlthServController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/controller/T05PersCapInvstController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/controller/T05PopuLabrWorkController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/controller/T05PopuRecvEduSituController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/controller/T05ReseaAchieSituController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/controller/T05RsdntGoverIncomController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/dao/T01AgingPopuPctDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/dao/T01HousdRgstPopuDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/dao/T01HousdRgstPopuGrowRateDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/dao/T01LiqdPopuAndGrowRateDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/dao/T01LiqdPopuDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/dao/T01PrmnPopuAgeMidDigitDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/dao/T01PrmnPopuAndGrowRateDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/dao/T01PrmnPopuDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/dao/T05BasicPubCultDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/dao/T05ChrnBrSituDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/dao/T05FamilyEgrCoefDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/dao/T05MdclHlthServDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/dao/T05PersCapInvstDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/dao/T05PopuLabrWorkDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/dao/T05PopuRecvEduSituDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/dao/T05ReseaAchieSituDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/dao/T05RsdntGoverIncomDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/T01AgingPopuPctService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/T01HousdRgstPopuGrowRateService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/T01HousdRgstPopuService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/T01LiqdPopuAndGrowRateService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/T01LiqdPopuService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/T01PrmnPopuAgeMidDigitService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/T01PrmnPopuAndGrowRateService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/T01PrmnPopuService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/T05BasicPubCultService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/T05ChrnBrSituService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/T05FamilyEgrCoefService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/T05MdclHlthServService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/T05PersCapInvstService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/T05PopuLabrWorkService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/T05PopuRecvEduSituService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/T05ReseaAchieSituService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/T05RsdntGoverIncomService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/impl/T01AgingPopuPctServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/impl/T01HousdRgstPopuGrowRateServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/impl/T01HousdRgstPopuServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/impl/T01LiqdPopuAndGrowRateServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/impl/T01LiqdPopuServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/impl/T01PrmnPopuAgeMidDigitServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/impl/T01PrmnPopuAndGrowRateServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/impl/T01PrmnPopuServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/impl/T05BasicPubCultServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/impl/T05ChrnBrSituServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/impl/T05FamilyEgrCoefServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/impl/T05MdclHlthServServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/impl/T05PersCapInvstServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/impl/T05PopuLabrWorkServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/impl/T05PopuRecvEduSituServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/impl/T05ReseaAchieSituServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/impl/T05RsdntGoverIncomServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/controller/IT01LabrPopuRatioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/controller/IT01LabrPopuRatioController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/entity/T01LabrPopuRatio.java" beforeDir="false" afterPath="$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/entity/T01LabrPopuRatio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/controller/T01LabrPopuRatioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/controller/T01LabrPopuRatioController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/dao/T01LabrPopuRatioDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/dao/T01LabrPopuRatioDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/T01LabrPopuRatioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/T01LabrPopuRatioService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/impl/T01LabrPopuRatioServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/impl/T01LabrPopuRatioServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/impl/T04WorkPersMemQtyOcupLabrPopuRatioServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/impl/T04WorkPersMemQtyOcupLabrPopuRatioServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/impl/T04WorkPopuGrowRateTrndServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/impl/T04WorkPopuGrowRateTrndServiceImpl.java" afterDir="false" />
+    <list default="true" id="e7db874a-b8e6-4e73-b3c0-bad2c801d0d8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/controller/IT07PersRecvEduYrsPersGdpRelController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/controller/IT07QltyFstNmController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/entity/T07PersRecvEduYrsPersGdpRel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/entity/T07QltyFstNm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/controller/T07PersRecvEduYrsPersGdpRelController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/controller/T07QltyFstNmController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/dao/T07PersRecvEduYrsPersGdpRelDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/dao/T07QltyFstNmDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/T07PersRecvEduYrsPersGdpRelService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/T07QltyFstNmService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/impl/T07PersRecvEduYrsPersGdpRelServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/impl/T07QltyFstNmServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/dfjinxin-development/development-server/target/" />
@@ -139,38 +41,10 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/controller/IT01AgingPopuPctController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="22" column="37" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/controller/IT05BasicPubCultController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="22" column="37" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/controller/IT05ChrnBrSituController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="22" column="35" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/controller/IT05FamilyEgrCoefController.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -225,11 +99,34 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/controller/IT05RsdntGoverIncomController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
+            <state relative-caret-position="56">
               <caret line="22" column="40" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="3" column="12" lean-forward="true" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/controller/T04WorkPopuGrowRateTrndController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="64">
+              <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -254,7 +151,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/impl/T01PrmnPopuServiceImpl.java" />
         <option value="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/impl/T01PrmnPopuAndGrowRateServiceImpl.java" />
         <option value="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/impl/T01PrmnPopuAgeMidDigitServiceImpl.java" />
         <option value="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/service/impl/T01LiqdPopuServiceImpl.java" />
@@ -305,6 +201,7 @@
         <option value="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/controller/T05PopuRecvEduSituController.java" />
         <option value="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/controller/T05ReseaAchieSituController.java" />
         <option value="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/controller/T05RsdntGoverIncomController.java" />
+        <option value="$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/controller/T04WorkPopuGrowRateTrndController.java" />
       </list>
     </option>
   </component>
@@ -360,68 +257,6 @@
               <item name="dfjinxin-largescreen" type="b2602c69:ProjectViewProjectNode" />
               <item name="largescreen" type="462c0819:PsiDirectoryNode" />
               <item name="dfjinxin-population" type="462c0819:PsiDirectoryNode" />
-              <item name="population-api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dfjinxin-largescreen" type="b2602c69:ProjectViewProjectNode" />
-              <item name="largescreen" type="462c0819:PsiDirectoryNode" />
-              <item name="dfjinxin-population" type="462c0819:PsiDirectoryNode" />
-              <item name="population-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dfjinxin-largescreen" type="b2602c69:ProjectViewProjectNode" />
-              <item name="largescreen" type="462c0819:PsiDirectoryNode" />
-              <item name="dfjinxin-population" type="462c0819:PsiDirectoryNode" />
-              <item name="population-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dfjinxin-largescreen" type="b2602c69:ProjectViewProjectNode" />
-              <item name="largescreen" type="462c0819:PsiDirectoryNode" />
-              <item name="dfjinxin-population" type="462c0819:PsiDirectoryNode" />
-              <item name="population-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dfjinxin-largescreen" type="b2602c69:ProjectViewProjectNode" />
-              <item name="largescreen" type="462c0819:PsiDirectoryNode" />
-              <item name="dfjinxin-population" type="462c0819:PsiDirectoryNode" />
-              <item name="population-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dfjinxin-largescreen" type="b2602c69:ProjectViewProjectNode" />
-              <item name="largescreen" type="462c0819:PsiDirectoryNode" />
-              <item name="dfjinxin-population" type="462c0819:PsiDirectoryNode" />
-              <item name="population-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dfjinxin-largescreen" type="b2602c69:ProjectViewProjectNode" />
-              <item name="largescreen" type="462c0819:PsiDirectoryNode" />
-              <item name="dfjinxin-population" type="462c0819:PsiDirectoryNode" />
-              <item name="population-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dfjinxin-largescreen" type="b2602c69:ProjectViewProjectNode" />
-              <item name="largescreen" type="462c0819:PsiDirectoryNode" />
-              <item name="dfjinxin-population" type="462c0819:PsiDirectoryNode" />
               <item name="population-server" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -480,43 +315,6 @@
               <item name="server" type="462c0819:PsiDirectoryNode" />
               <item name="modules" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dfjinxin-largescreen" type="b2602c69:ProjectViewProjectNode" />
-              <item name="largescreen" type="462c0819:PsiDirectoryNode" />
-              <item name="dfjinxin-population" type="462c0819:PsiDirectoryNode" />
-              <item name="population-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dfjinxin-largescreen" type="b2602c69:ProjectViewProjectNode" />
-              <item name="largescreen" type="462c0819:PsiDirectoryNode" />
-              <item name="dfjinxin-population" type="462c0819:PsiDirectoryNode" />
-              <item name="population-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dfjinxin-largescreen" type="b2602c69:ProjectViewProjectNode" />
-              <item name="largescreen" type="462c0819:PsiDirectoryNode" />
-              <item name="dfjinxin-population" type="462c0819:PsiDirectoryNode" />
-              <item name="population-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -679,23 +477,22 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18177000" />
+    <option name="totallyTimeSpent" value="18341000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1310" height="784" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Designer" />
-      <window_info id="Image Layers" />
-      <window_info id="Capture Tool" />
-      <window_info id="UI Designer" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info id="Web" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2664" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2664" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Web" order="6" side_tool="true" />
+      <window_info id="Image Layers" order="7" />
       <window_info anchor="bottom" id="Application Servers" order="0" weight="0.3290735" />
       <window_info anchor="bottom" id="GraphQL" order="1" />
-      <window_info anchor="bottom" id="Terminal" order="2" weight="0.6485623" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="2" visible="true" weight="0.6485623" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="5" weight="0.3290735" />
@@ -710,16 +507,16 @@
       <window_info anchor="bottom" id="Cvs" order="14" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="15" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="16" />
-      <window_info anchor="right" id="Maven" weight="0.3296" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Bean Validation" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.3296" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
     </layout>
     <layout-to-restore>
       <window_info id="Designer" order="0" />
@@ -775,27 +572,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/controller/IT01LabrPopuRatioController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="22" column="38" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/controller/IT01LiqdPopuAndGrowRateController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="22" column="44" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/controller/IT01LiqdPopuController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="22" column="33" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/controller/IT01PrmnPopuAgeMidDigitController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
@@ -1180,8 +956,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dfjinxin-population/population-api/src/main/java/com/dfjinxin/population/api/controller/IT05RsdntGoverIncomController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
+        <state relative-caret-position="56">
           <caret line="22" column="40" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="12" lean-forward="true" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dfjinxin-population/population-server/src/main/java/com/dfjinxin/population/server/modules/controller/T04WorkPopuGrowRateTrndController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
         </state>
       </provider>
     </entry>
