@@ -11,26 +11,26 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.dfjinxin.commons.core.util.api.PageUtils;
 import com.dfjinxin.commons.core.util.api.Query;
 
-import com.dfjinxin.population.server.modules.dao.T01LabrPopuRatioDao;
-import com.dfjinxin.population.api.entity.T01LabrPopuRatio;
-import com.dfjinxin.population.server.modules.service.T01LabrPopuRatioService;
+import com.dfjinxin.population.server.modules.dao.T05ReseaAchieSituDao;
+import com.dfjinxin.population.api.entity.T05ReseaAchieSitu;
+import com.dfjinxin.population.server.modules.service.T05ReseaAchieSituService;
 
 
-@Service("t01LabrPopuRatioService")
-public class T01LabrPopuRatioServiceImpl extends ServiceImpl<T01LabrPopuRatioDao, T01LabrPopuRatio> implements T01LabrPopuRatioService {
+@Service("t05ReseaAchieSituService")
+public class T05ReseaAchieSituServiceImpl extends ServiceImpl<T05ReseaAchieSituDao, T05ReseaAchieSitu> implements T05ReseaAchieSituService {
 
     @Override
     public PageUtils queryPage(Map<String, Object> params) {
-        IPage<T01LabrPopuRatio> page = this.page(
-                new Query<T01LabrPopuRatio>().getPage(params),
-                new QueryWrapper<T01LabrPopuRatio>()
+        IPage<T05ReseaAchieSitu> page = this.page(
+                new Query<T05ReseaAchieSitu>().getPage(params),
+                new QueryWrapper<T05ReseaAchieSitu>()
         );
 
         return new PageUtils(page);
     }
 
     @Override
-    public List<T01LabrPopuRatio> getList(Map<String, Object> params) {
+    public List<T05ReseaAchieSitu> getList(Map<String, Object> params) {
         QueryWrapper wrapper = WrapperUtils.createWrapper(params);
         return baseMapper.selectList(wrapper);
     }

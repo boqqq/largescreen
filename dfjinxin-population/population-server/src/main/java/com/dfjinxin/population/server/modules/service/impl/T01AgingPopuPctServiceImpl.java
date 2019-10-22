@@ -11,26 +11,26 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.dfjinxin.commons.core.util.api.PageUtils;
 import com.dfjinxin.commons.core.util.api.Query;
 
-import com.dfjinxin.population.server.modules.dao.T01LabrPopuRatioDao;
-import com.dfjinxin.population.api.entity.T01LabrPopuRatio;
-import com.dfjinxin.population.server.modules.service.T01LabrPopuRatioService;
+import com.dfjinxin.population.server.modules.dao.T01AgingPopuPctDao;
+import com.dfjinxin.population.api.entity.T01AgingPopuPct;
+import com.dfjinxin.population.server.modules.service.T01AgingPopuPctService;
 
 
-@Service("t01LabrPopuRatioService")
-public class T01LabrPopuRatioServiceImpl extends ServiceImpl<T01LabrPopuRatioDao, T01LabrPopuRatio> implements T01LabrPopuRatioService {
+@Service("t01AgingPopuPctService")
+public class T01AgingPopuPctServiceImpl extends ServiceImpl<T01AgingPopuPctDao, T01AgingPopuPct> implements T01AgingPopuPctService {
 
     @Override
     public PageUtils queryPage(Map<String, Object> params) {
-        IPage<T01LabrPopuRatio> page = this.page(
-                new Query<T01LabrPopuRatio>().getPage(params),
-                new QueryWrapper<T01LabrPopuRatio>()
+        IPage<T01AgingPopuPct> page = this.page(
+                new Query<T01AgingPopuPct>().getPage(params),
+                new QueryWrapper<T01AgingPopuPct>()
         );
 
         return new PageUtils(page);
     }
 
     @Override
-    public List<T01LabrPopuRatio> getList(Map<String, Object> params) {
+    public List<T01AgingPopuPct> getList(Map<String, Object> params) {
         QueryWrapper wrapper = WrapperUtils.createWrapper(params);
         return baseMapper.selectList(wrapper);
     }

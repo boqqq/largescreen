@@ -10,17 +10,17 @@ import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.FieldFill;
 
 /**
- * 劳动人口占比及同比
+ * 常住人口及增长率
  *
  * @author zdl
  * @email 492587402@qq.com
- * @date 2019-10-22 09:36:11
+ * @date 2019-10-22 09:36:32
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-@TableName("t01_labr_popu_ratio")
-public class T01LabrPopuRatio implements Serializable {
+@TableName("t01_prmn_popu_and_grow_rate")
+public class T01PrmnPopuAndGrowRate implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	/**
@@ -39,12 +39,12 @@ public class T01LabrPopuRatio implements Serializable {
 	private String dateStat;
 
 	/**
-	 * 占比
+	 * 常住人口
 	 */
-	private String proportion;
+	private String popuTotal;
 
 	/**
-	 * 同比
+	 * 劳动人口比例
 	 */
 	private String ytyGrowth;
 
