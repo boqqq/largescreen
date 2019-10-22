@@ -32,9 +32,9 @@ public class T04RgstRgstTypWorkPersMemStruChgController implements IT04RgstRgstT
      */
     @Override
     public Response list(@RequestParam Map<String, Object> params){
-        List<T04RgstRgstTypWorkPersMemStruChg> T01LabrPopuRatioList = t04RgstRgstTypWorkPersMemStruChgService.getList(params);
+        List<T04RgstRgstTypWorkPersMemStruChg> list = t04RgstRgstTypWorkPersMemStruChgService.getList(params);
 
-        return Response.ok().put("list", T01LabrPopuRatioList);
+        return Response.ok().put("list", list);
     }
 
 

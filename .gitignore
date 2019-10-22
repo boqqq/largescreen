@@ -8,3 +8,6 @@
 /dfjinxin-population/population-api/target/
 /dfjinxin-population/population-server/target/
 /tools/dfjinxin-generator/target/
+
+*.iml
+.idea

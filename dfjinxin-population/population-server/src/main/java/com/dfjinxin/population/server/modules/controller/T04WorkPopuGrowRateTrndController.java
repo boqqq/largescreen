@@ -32,9 +32,9 @@ public class T04WorkPopuGrowRateTrndController implements IT04WorkPopuGrowRateTr
      */
     @Override
     public Response list(@RequestParam Map<String, Object> params){
-        List<T04WorkPopuGrowRateTrnd> T01LabrPopuRatioList = t04WorkPopuGrowRateTrndService.getList(params);
+        List<T04WorkPopuGrowRateTrnd> list = t04WorkPopuGrowRateTrndService.getList(params);
 
-        return Response.ok().put("list", T01LabrPopuRatioList);
+        return Response.ok().put("list", list);
     }
 
 

@@ -32,9 +32,9 @@ public class T04IndsWorkPersMemQtyChgTrndController implements IT04IndsWorkPersM
      */
     @Override
     public Response list(@RequestParam Map<String, Object> params){
-        List<T04IndsWorkPersMemQtyChgTrnd> T01LabrPopuRatioList = t04IndsWorkPersMemQtyChgTrndService.getList(params);
+        List<T04IndsWorkPersMemQtyChgTrnd> list = t04IndsWorkPersMemQtyChgTrndService.getList(params);
 
-        return Response.ok().put("list", T01LabrPopuRatioList);
+        return Response.ok().put("list", list);
     }
 
 
