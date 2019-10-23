@@ -1,6 +1,6 @@
 package com.dfjinxin.population.server.modules.service.impl;
 
-import org.apache.commons.lang.StringUtils;
+import com.dfjinxin.commons.core.util.WrapperUtils;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -31,12 +31,7 @@ public class T01LabrPopuRatioServiceImpl extends ServiceImpl<T01LabrPopuRatioDao
 
     @Override
     public List<T01LabrPopuRatio> getList(Map<String, Object> params) {
-        String areaCode = (String)params.get("area_code");
-        String dateStat = (String)params.get("date_stat");
-        QueryWrapper wrapper = new QueryWrapper();
-        wrapper.eq(StringUtils.isNotEmpty(areaCode), "area_code", areaCode);
-        wrapper.eq(StringUtils.isNotEmpty(areaCode), "date_stat", dateStat);
-
+        QueryWrapper wrapper = WrapperUtils.createWrapper(params);
         return baseMapper.selectList(wrapper);
     }
 }

@@ -1,26 +1,26 @@
 package com.dfjinxin.population.api.controller;
 
-import java.util.Map;
-import org.springframework.web.bind.annotation.PathVariable;
+import com.dfjinxin.commons.core.util.api.Response;
+import com.dfjinxin.population.api.FeignClientConfig;
+import com.dfjinxin.population.api.entity.T06PopuAgeMidDigitChgTrnd;
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.cloud.openfeign.FeignClientsConfiguration;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import com.dfjinxin.population.api.entity.T06PopuAgeMidDigitChgTrnd;
-import org.springframework.cloud.openfeign.FeignClientsConfiguration;
-import com.dfjinxin.commons.core.util.api.Response;
-import org.springframework.cloud.openfeign.FeignClient;
-import com.dfjinxin.population.api.FeignClientConfig;
+
+import java.util.Map;
 
 /**
  * 人口年龄中位数变化趋势
  *
  * @author zdl
  * @email 492587402@qq.com
- * @date 2019-10-21 15:13:11
+ * @date 2019-10-21 17:10:02
  */
-@FeignClient(contextId = "dev_t06popuagemiddigitchgtrnd",
+@FeignClient(contextId = "home_t06popuagemiddigitchgtrnd",
         name = FeignClientConfig.NAME, configuration = FeignClientsConfiguration.class)
-@RequestMapping("dev/t06popuagemiddigitchgtrnd")
+@RequestMapping("home/t06popuagemiddigitchgtrnd")
 public interface IT06PopuAgeMidDigitChgTrndController {
 
     /**
@@ -29,12 +29,12 @@ public interface IT06PopuAgeMidDigitChgTrndController {
     @RequestMapping("/list")
     Response list(@RequestParam Map<String, Object> params);
 
-
     /**
-     * 信息
+     * 人口中位数变化率
      */
-    @RequestMapping("/info/{dateStat}")
-    public Response info(@PathVariable("dateStat") String dateStat);
+    @RequestMapping("/select")
+    Response select(@RequestParam Map<String, Object> params);
+
 
     /**
      * 保存
@@ -48,10 +48,5 @@ public interface IT06PopuAgeMidDigitChgTrndController {
     @RequestMapping("/update")
     public Response update(@RequestBody T06PopuAgeMidDigitChgTrnd t06PopuAgeMidDigitChgTrnd);
 
-    /**
-     * 删除
-     */
-    @RequestMapping("/delete")
-    public Response delete(@RequestBody String[] dateStats);
 
 }

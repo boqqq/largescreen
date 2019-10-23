@@ -1,19 +1,17 @@
 package com.dfjinxin.population.server.modules.controller;
 
-import java.util.Arrays;
-import java.util.Map;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
-import com.dfjinxin.population.api.entity.T06PopuAgeMidDigitChgTrnd;
-import com.dfjinxin.population.server.modules.service.T06PopuAgeMidDigitChgTrndService;
 import com.dfjinxin.commons.core.util.api.PageUtils;
 import com.dfjinxin.commons.core.util.api.Response;
 import com.dfjinxin.population.api.controller.IT06PopuAgeMidDigitChgTrndController;
-import com.dfjinxin.commons.core.util.api.Response;
+import com.dfjinxin.population.api.entity.T06PopuAgeMidDigitChgTrnd;
+import com.dfjinxin.population.server.modules.service.T06PopuAgeMidDigitChgTrndService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+import java.util.Map;
 
 
 /**
@@ -21,10 +19,10 @@ import com.dfjinxin.commons.core.util.api.Response;
  *
  * @author zdl
  * @email 492587402@qq.com
- * @date 2019-10-21 15:13:11
+ * @date 2019-10-21 17:10:02
  */
 @RestController
-public class T06PopuAgeMidDigitChgTrndController implements IT06PopuAgeMidDigitChgTrndController{
+public class T06PopuAgeMidDigitChgTrndController implements IT06PopuAgeMidDigitChgTrndController {
 
     @Autowired
     private T06PopuAgeMidDigitChgTrndService t06PopuAgeMidDigitChgTrndService;
@@ -39,16 +37,18 @@ public class T06PopuAgeMidDigitChgTrndController implements IT06PopuAgeMidDigitC
         return Response.ok().put("page", page);
     }
 
-
     /**
-     * 信息
+     * 列表
      */
     @Override
-    public Response info(@PathVariable("dateStat") String dateStat){
-		T06PopuAgeMidDigitChgTrnd t06PopuAgeMidDigitChgTrnd = t06PopuAgeMidDigitChgTrndService.getById(dateStat);
+    public Response select(@RequestParam Map<String, Object> params){
+        List<T06PopuAgeMidDigitChgTrnd> page = t06PopuAgeMidDigitChgTrndService.select(params);
 
-        return Response.ok().put("t06PopuAgeMidDigitChgTrnd", t06PopuAgeMidDigitChgTrnd);
+        return Response.ok().put("page", page);
     }
+
+
+
 
     /**
      * 保存
@@ -70,14 +70,5 @@ public class T06PopuAgeMidDigitChgTrndController implements IT06PopuAgeMidDigitC
         return Response.ok();
     }
 
-    /**
-     * 删除
-     */
-    @Override
-    public Response delete(@RequestBody String[] dateStats){
-		t06PopuAgeMidDigitChgTrndService.removeByIds(Arrays.asList(dateStats));
-
-        return Response.ok();
-    }
 
 }

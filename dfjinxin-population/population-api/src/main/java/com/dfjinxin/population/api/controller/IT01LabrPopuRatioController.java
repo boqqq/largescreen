@@ -16,7 +16,7 @@ import com.dfjinxin.population.api.FeignClientConfig;
  *
  * @author zdl
  * @email 492587402@qq.com
- * @date 2019-10-21 15:23:18
+ * @date 2019-10-22 09:36:11
  */
 @FeignClient(contextId = "home_t01labrpopuratio",
         name = FeignClientConfig.NAME, configuration = FeignClientsConfiguration.class)
@@ -30,11 +30,6 @@ public interface IT01LabrPopuRatioController {
     Response list(@RequestParam Map<String, Object> params);
 
 
-    /**
-     * 信息
-     */
-    @RequestMapping("/info/{areaCode}")
-    public Response info(@PathVariable("areaCode") String areaCode);
 
     /**
      * 保存
@@ -48,10 +43,5 @@ public interface IT01LabrPopuRatioController {
     @RequestMapping("/update")
     public Response update(@RequestBody T01LabrPopuRatio t01LabrPopuRatio);
 
-    /**
-     * 删除
-     */
-    @RequestMapping("/delete")
-    public Response delete(@RequestBody String[] areaCodes);
 
 }
