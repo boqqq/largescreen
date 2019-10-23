@@ -37,6 +37,17 @@ public class T01PrmnPopuAndGrowRateController implements IT01PrmnPopuAndGrowRate
         return Response.ok().put("list", list);
     }
 
+    /**
+     * 常住人口及增长率
+     */
+    @Override
+    public Response select(){
+        List<T01PrmnPopuAndGrowRate> list = t01PrmnPopuAndGrowRateService.select();
+
+        return Response.ok().put("list", list);
+    }
+
+
 
 
     /**

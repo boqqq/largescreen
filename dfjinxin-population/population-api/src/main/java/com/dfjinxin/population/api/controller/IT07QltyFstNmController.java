@@ -29,7 +29,35 @@ public interface IT07QltyFstNmController {
     @RequestMapping("/list")
     Response list(@RequestParam Map<String, Object> params);
 
+    /**
+     * 空气质量排名
+     */
+    @RequestMapping("/select")
+    Response select(@RequestParam Map<String, Object> params);
 
+    /**
+     * 城乡发展差异
+     */
+    @RequestMapping("/bottomIndex1")
+    Response bottomIndex1(@RequestParam Map<String, Object> params);
+
+    /**
+     * 人与资源环境
+     */
+    @RequestMapping("/bottomIndex2")
+    Response bottomIndex2(@RequestParam Map<String, Object> params);
+
+    /**
+     * 人与社会保障
+     */
+    @RequestMapping("/bottomIndex3")
+    Response bottomIndex3(@RequestParam Map<String, Object> params);
+
+    /**
+     * 左边指标
+     */
+    @RequestMapping("/leftIndex")
+    Response leftIndex(@RequestParam Map<String, Object> params);
 
     /**
      * 保存

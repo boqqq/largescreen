@@ -29,7 +29,11 @@ public interface IT01PrmnPopuAndGrowRateController {
     @RequestMapping("/list")
     Response list(@RequestParam Map<String, Object> params);
 
-
+    /**
+     * 常住人口及增长率
+     */
+    @RequestMapping("/select")
+    Response select();
 
     /**
      * 保存

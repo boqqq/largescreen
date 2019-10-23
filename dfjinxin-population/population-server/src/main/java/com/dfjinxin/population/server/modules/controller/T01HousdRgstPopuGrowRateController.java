@@ -37,6 +37,16 @@ public class T01HousdRgstPopuGrowRateController implements IT01HousdRgstPopuGrow
         return Response.ok().put("list", list);
     }
 
+    /**
+     * 户籍人口及增长率
+     */
+    @Override
+    public Response select(){
+        List<T01HousdRgstPopuGrowRate> list = t01HousdRgstPopuGrowRateService.select();
+
+        return Response.ok().put("list", list);
+    }
+
 
 
     /**

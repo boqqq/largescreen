@@ -29,6 +29,11 @@ public interface IT01PrmnPopuController {
     @RequestMapping("/list")
     Response list(@RequestParam Map<String, Object> params);
 
+    /**
+     * 各市县常住人口情况
+     */
+    @RequestMapping("/select")
+    Response select();
 
 
     /**

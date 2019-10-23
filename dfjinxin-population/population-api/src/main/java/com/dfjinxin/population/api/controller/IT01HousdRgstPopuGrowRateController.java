@@ -29,6 +29,11 @@ public interface IT01HousdRgstPopuGrowRateController {
     @RequestMapping("/list")
     Response list(@RequestParam Map<String, Object> params);
 
+    /**
+     * 户籍人口及增长率
+     */
+    @RequestMapping("/select")
+    Response select();
 
 
     /**

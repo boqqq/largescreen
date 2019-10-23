@@ -29,6 +29,12 @@ public interface IT01LiqdPopuAndGrowRateController {
     @RequestMapping("/list")
     Response list(@RequestParam Map<String, Object> params);
 
+    /**
+     * 流动人口及增长率
+     */
+    @RequestMapping("/select")
+    Response select();
+
 
 
     /**

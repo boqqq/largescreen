@@ -1,17 +1,16 @@
 package com.dfjinxin.population.server.modules.controller;
 
-import java.util.List;
-import java.util.Map;
-
+import com.dfjinxin.commons.core.util.api.Response;
+import com.dfjinxin.population.api.controller.IT01LiqdPopuController;
+import com.dfjinxin.population.api.entity.T01LiqdPopu;
+import com.dfjinxin.population.server.modules.service.T01LiqdPopuService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import com.dfjinxin.population.api.entity.T01LiqdPopu;
-import com.dfjinxin.population.server.modules.service.T01LiqdPopuService;
-import com.dfjinxin.commons.core.util.api.Response;
-import com.dfjinxin.population.api.controller.IT01LiqdPopuController;
 
+import java.util.List;
+import java.util.Map;
 
 
 /**
@@ -22,7 +21,7 @@ import com.dfjinxin.population.api.controller.IT01LiqdPopuController;
  * @date 2019-10-22 09:36:04
  */
 @RestController
-public class T01LiqdPopuController implements IT01LiqdPopuController{
+public class T01LiqdPopuController implements IT01LiqdPopuController {
 
     @Autowired
     private T01LiqdPopuService t01LiqdPopuService;
@@ -33,6 +32,16 @@ public class T01LiqdPopuController implements IT01LiqdPopuController{
     @Override
     public Response list(@RequestParam Map<String, Object> params){
         List<T01LiqdPopu> list = t01LiqdPopuService.getList(params);
+
+        return Response.ok().put("list", list);
+    }
+
+    /**
+     * 列表
+     */
+    @Override
+    public Response leftIndex(@RequestParam Map<String, Object> params){
+        List<Map<String, Object>> list = t01LiqdPopuService.leftIndex();
 
         return Response.ok().put("list", list);
     }

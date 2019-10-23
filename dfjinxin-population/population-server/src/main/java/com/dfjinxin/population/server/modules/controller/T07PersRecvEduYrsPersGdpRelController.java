@@ -1,6 +1,7 @@
 package com.dfjinxin.population.server.modules.controller;
 
 import java.util.Arrays;
+import java.util.List;
 import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -38,6 +39,17 @@ public class T07PersRecvEduYrsPersGdpRelController implements IT07PersRecvEduYrs
 
         return Response.ok().put("page", page);
     }
+
+    /**
+     * 人均受教育年限与人均GDP关系演变
+     */
+    @Override
+    public Response select(@RequestParam Map<String, Object> params){
+        List<T07PersRecvEduYrsPersGdpRel> page = t07PersRecvEduYrsPersGdpRelService.select(params);
+
+        return Response.ok().put("page", page);
+    }
+
 
 
 

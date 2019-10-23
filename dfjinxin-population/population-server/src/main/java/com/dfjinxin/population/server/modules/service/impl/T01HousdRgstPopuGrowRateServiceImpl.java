@@ -34,4 +34,9 @@ public class T01HousdRgstPopuGrowRateServiceImpl extends ServiceImpl<T01HousdRgs
         QueryWrapper wrapper = WrapperUtils.createWrapper(params);
         return baseMapper.selectList(wrapper);
     }
+
+    @Override
+    public List<T01HousdRgstPopuGrowRate> select() {
+        return baseMapper.select();
+    }
 }

@@ -1,6 +1,8 @@
 package com.dfjinxin.population.server.modules.service.impl;
 
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 import java.util.Map;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
@@ -24,6 +26,12 @@ public class T07PersRecvEduYrsPersGdpRelServiceImpl extends ServiceImpl<T07PersR
         );
 
         return new PageUtils(page);
+    }
+
+    @Override
+    public List<T07PersRecvEduYrsPersGdpRel> select(Map<String, Object> params) {
+        List<T07PersRecvEduYrsPersGdpRel> page = baseMapper.select(params);
+        return page;
     }
 
 }

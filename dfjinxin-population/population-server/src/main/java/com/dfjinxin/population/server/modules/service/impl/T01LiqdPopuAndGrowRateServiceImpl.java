@@ -34,4 +34,9 @@ public class T01LiqdPopuAndGrowRateServiceImpl extends ServiceImpl<T01LiqdPopuAn
         QueryWrapper wrapper = WrapperUtils.createWrapper(params);
         return baseMapper.selectList(wrapper);
     }
+
+    @Override
+    public List<T01LiqdPopuAndGrowRate> select() {
+        return baseMapper.select();
+    }
 }

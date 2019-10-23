@@ -20,5 +20,7 @@ public interface T01LiqdPopuService extends IService<T01LiqdPopu> {
 
     List<T01LiqdPopu> getList(Map<String, Object> params);
 
+    List<Map<String, Object>> leftIndex();
+
 }
 
