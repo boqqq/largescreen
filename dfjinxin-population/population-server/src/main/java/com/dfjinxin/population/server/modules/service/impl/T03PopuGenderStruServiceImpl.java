@@ -35,7 +35,7 @@ public class T03PopuGenderStruServiceImpl extends ServiceImpl<T03PopuGenderStruD
     @Override
     public Map<String,List<String>> findAll(){
         List<String> manList = t03PopuGenderStruDao.findManAll().stream().map(v->v.getYtyGrowth()).collect(Collectors.toList());
-        List<String> womanList = t03PopuGenderStruDao.findWomanAll().stream().map(v->'-'+v.getYtyGrowth()).collect(Collectors.toList());
+        List<String> womanList = t03PopuGenderStruDao.findWomanAll().stream().map(v->v.getYtyGrowth()).collect(Collectors.toList());
         Map<String,List<String>> resultMap = new HashMap<>();
         resultMap.put("man",manList);
         resultMap.put("woman",womanList);

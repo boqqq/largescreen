@@ -43,5 +43,7 @@ public interface IT03PopuFlowInFlowOutStruController {
     @RequestMapping("/update")
     public Response update(@RequestBody T03PopuFlowInFlowOutStru t03PopuFlowInFlowOutStru);
 
+    @RequestMapping("/findAll")
+    Response findAll();
 
 }

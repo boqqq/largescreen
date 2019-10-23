@@ -15,5 +15,6 @@ import java.util.Map;
 public interface T03PopuFlowInFlowOutStruService extends IService<T03PopuFlowInFlowOutStru> {
 
     PageUtils queryPage(Map<String, Object> params);
+    Map findAll();
 }
 
