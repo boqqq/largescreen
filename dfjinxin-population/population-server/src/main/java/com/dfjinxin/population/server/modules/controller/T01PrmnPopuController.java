@@ -43,7 +43,7 @@ public class T01PrmnPopuController implements IT01PrmnPopuController{
      */
     @Override
     public Response select(){
-        List<T01PrmnPopu> list = t01PrmnPopuService.select();
+        List<Map<String, Object>> list = t01PrmnPopuService.select();
 
         return Response.ok().put("list", list);
     }
