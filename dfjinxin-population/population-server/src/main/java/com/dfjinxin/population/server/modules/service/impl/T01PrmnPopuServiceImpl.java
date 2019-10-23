@@ -34,4 +34,9 @@ public class T01PrmnPopuServiceImpl extends ServiceImpl<T01PrmnPopuDao, T01PrmnP
         QueryWrapper wrapper = WrapperUtils.createWrapper(params);
         return baseMapper.selectList(wrapper);
     }
+
+    @Override
+    public List<T01PrmnPopu> select() {
+        return baseMapper.select();
+    }
 }

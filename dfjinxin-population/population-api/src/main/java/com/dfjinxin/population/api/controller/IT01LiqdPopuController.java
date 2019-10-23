@@ -1,15 +1,15 @@
 package com.dfjinxin.population.api.controller;
 
-import java.util.Map;
-import org.springframework.web.bind.annotation.PathVariable;
+import com.dfjinxin.commons.core.util.api.Response;
+import com.dfjinxin.population.api.FeignClientConfig;
+import com.dfjinxin.population.api.entity.T01LiqdPopu;
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.cloud.openfeign.FeignClientsConfiguration;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import com.dfjinxin.population.api.entity.T01LiqdPopu;
-import org.springframework.cloud.openfeign.FeignClientsConfiguration;
-import com.dfjinxin.commons.core.util.api.Response;
-import org.springframework.cloud.openfeign.FeignClient;
-import com.dfjinxin.population.api.FeignClientConfig;
+
+import java.util.Map;
 
 /**
  * 流动人口
@@ -29,6 +29,11 @@ public interface IT01LiqdPopuController {
     @RequestMapping("/list")
     Response list(@RequestParam Map<String, Object> params);
 
+    /**
+     * 左侧指标
+     */
+    @RequestMapping("/leftIndex")
+    Response leftIndex(@RequestParam Map<String, Object> params);
 
 
     /**

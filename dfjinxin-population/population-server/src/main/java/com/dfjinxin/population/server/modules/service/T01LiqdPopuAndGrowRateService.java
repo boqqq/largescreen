@@ -20,5 +20,7 @@ public interface T01LiqdPopuAndGrowRateService extends IService<T01LiqdPopuAndGr
 
     List<T01LiqdPopuAndGrowRate> getList(Map<String, Object> params);
 
+    List<T01LiqdPopuAndGrowRate> select();
+
 }
 

@@ -38,6 +38,16 @@ public class T01PrmnPopuController implements IT01PrmnPopuController{
         return Response.ok().put("list", list);
     }
 
+    /**
+     * 各市县常住人口情况
+     */
+    @Override
+    public Response select(){
+        List<T01PrmnPopu> list = t01PrmnPopuService.select();
+
+        return Response.ok().put("list", list);
+    }
+
 
 
     /**

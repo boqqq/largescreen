@@ -37,6 +37,17 @@ public class T01LiqdPopuAndGrowRateController implements IT01LiqdPopuAndGrowRate
         return Response.ok().put("list", list);
     }
 
+    /**
+     * 列表
+     */
+    @Override
+    public Response select(){
+        List<T01LiqdPopuAndGrowRate> list = t01LiqdPopuAndGrowRateService.select();
+
+        return Response.ok().put("list", list);
+    }
+
+
 
 
     /**
