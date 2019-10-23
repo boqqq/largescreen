@@ -1,0 +1,47 @@
+package com.dfjinxin.population.api.controller;
+
+import java.util.Map;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import com.dfjinxin.population.api.entity.T02HousdRgstPrmnFognPopuTotlChg;
+import org.springframework.cloud.openfeign.FeignClientsConfiguration;
+import com.dfjinxin.commons.core.util.api.Response;
+import org.springframework.cloud.openfeign.FeignClient;
+import com.dfjinxin.population.api.FeignClientConfig;
+
+/**
+ * 流动人口及增长率
+ *
+ * @author zdl
+ * @email 492587402@qq.com
+ * @date 2019-10-22 08:39:03
+ */
+@FeignClient(contextId = "home_t02housdrgstprmnfognpoputotlchg",
+        name = FeignClientConfig.NAME, configuration = FeignClientsConfiguration.class)
+@RequestMapping("home/t02housdrgstprmnfognpoputotlchg")
+public interface IT02HousdRgstPrmnFognPopuTotlChgController {
+
+    /**
+     * 列表
+     */
+    @RequestMapping("/list")
+    Response list(@RequestParam Map<String, Object> params);
+
+
+
+    /**
+     * 保存
+     */
+    @RequestMapping("/save")
+    public Response save(@RequestBody T02HousdRgstPrmnFognPopuTotlChg t02HousdRgstPrmnFognPopuTotlChg);
+
+    /**
+     * 修改
+     */
+    @RequestMapping("/update")
+    public Response update(@RequestBody T02HousdRgstPrmnFognPopuTotlChg t02HousdRgstPrmnFognPopuTotlChg);
+
+
+}
