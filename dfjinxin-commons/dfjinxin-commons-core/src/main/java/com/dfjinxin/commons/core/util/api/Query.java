@@ -50,20 +50,24 @@ public class Query<T> {
         String order = (String)params.get(Constant.ORDER);
 
         //前端字段排序
-        if(StringUtils.isNotEmpty(orderField) && StringUtils.isNotEmpty(order)){
-            if(Constant.ASC.equalsIgnoreCase(order)) {
+        if(StringUtils.isNotEmpty(orderField)){
+            if(StringUtils.isNotEmpty(order)){
+                if(Constant.ASC.equalsIgnoreCase(order)) {
+                    return page.setAsc(orderField);
+                }else {
+                    return page.setDesc(orderField);
+                }
+            }else{
                 return page.setAsc(orderField);
-            }else {
-                return page.setDesc(orderField);
             }
         }
 
         //默认排序
-        if(isAsc) {
-            page.setAsc(defaultOrderField);
-        }else {
-            page.setDesc(defaultOrderField);
-        }
+//        if(isAsc) {
+//            page.setAsc(defaultOrderField);
+//        }else {
+//            page.setDesc(defaultOrderField);
+//        }
 
         return page;
     }

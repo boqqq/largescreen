@@ -5,7 +5,7 @@ import lombok.Data;
 import java.util.List;
 
 @Data
-public class T04IndsWorkPersMemStruVo {
+public class T04IndsWorkPersMemStru5YrChgVo {
 
     private List<String> desc;
 
