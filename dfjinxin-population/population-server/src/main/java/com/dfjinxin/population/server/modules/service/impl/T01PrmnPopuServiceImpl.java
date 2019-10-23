@@ -36,7 +36,7 @@ public class T01PrmnPopuServiceImpl extends ServiceImpl<T01PrmnPopuDao, T01PrmnP
     }
 
     @Override
-    public List<T01PrmnPopu> select() {
+    public List<Map<String, Object>> select() {
         return baseMapper.select();
     }
 }

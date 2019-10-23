@@ -7,6 +7,7 @@ import org.apache.ibatis.annotations.Select;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * 常住人口
@@ -19,12 +20,12 @@ import java.util.List;
 @Mapper
 public interface T01PrmnPopuDao extends BaseMapper<T01PrmnPopu> {
 
-    @Select("SELECT m1.area_code,m1.area_name,m1.date_stat,m1.popu_total,m1.unit,m2.unit1,m2.popu_total,m2.area_code1 FROM\n" +
+    @Select("SELECT m1.area_code,m1.area_name,m1.date_stat,m1.popu_total,m1.unit,m2.unit1,m2.popu_total1,m2.area_code1 FROM\n" +
             "(SELECT t.date_stat,t.area_code,t.area_name,t.unit,t.popu_total FROM T01_Prmn_Popu t\n" +
             "WHERE t.unit_type = '人口数量') m1,\n" +
-            "(SELECT t1.unit unit1,t1.popu_total popu_total,t1.area_code area_code1 FROM T01_Prmn_Popu t1\n" +
+            "(SELECT t1.unit unit1,t1.popu_total popu_total1,t1.area_code area_code1 FROM T01_Prmn_Popu t1\n" +
             "WHERE t1.unit_type = '增量') m2\n" +
             "WHERE m1.area_code = m2.area_code1\n" +
             "AND m1.area_code != '460000000000'")
-    List<T01PrmnPopu> select();
+    List<Map<String, Object>> select();
 }

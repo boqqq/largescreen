@@ -20,7 +20,7 @@ public interface T01PrmnPopuService extends IService<T01PrmnPopu> {
 
     List<T01PrmnPopu> getList(Map<String, Object> params);
 
-    List<T01PrmnPopu> select();
+    List<Map<String, Object>> select();
 
 }
 
