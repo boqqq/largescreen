@@ -31,6 +31,8 @@ public class T02LabrPopuGrowRateChgTrndServiceImpl extends ServiceImpl<T02LabrPo
 
     @Override
     public List<T02LabrPopuGrowRateChgTrnd> getList(Map<String, Object> params) {
+        params.put("order","date_stat");
+        params.put("limit","10");
         QueryWrapper wrapper = WrapperUtils.createWrapper(params);
         return baseMapper.selectList(wrapper);
     }

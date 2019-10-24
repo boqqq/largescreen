@@ -31,6 +31,8 @@ public class T02HousdRgstPrmnFognPopuTotlChgServiceImpl extends ServiceImpl<T02H
 
     @Override
     public List<T02HousdRgstPrmnFognPopuTotlChg> getList(Map<String, Object> params) {
+        params.put("order","date_stat");
+        params.put("limit","10");
         QueryWrapper wrapper = WrapperUtils.createWrapper(params);
         return baseMapper.selectList(wrapper);
     }
