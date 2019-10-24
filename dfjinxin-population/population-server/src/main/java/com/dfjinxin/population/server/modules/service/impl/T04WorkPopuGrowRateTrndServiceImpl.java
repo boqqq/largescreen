@@ -1,8 +1,10 @@
 package com.dfjinxin.population.server.modules.service.impl;
 
 import com.dfjinxin.commons.core.util.WrapperUtils;
+import org.apache.commons.lang.StringUtils;
 import org.springframework.stereotype.Service;
 
+import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
@@ -32,6 +34,10 @@ public class T04WorkPopuGrowRateTrndServiceImpl extends ServiceImpl<T04WorkPopuG
     @Override
     public List<T04WorkPopuGrowRateTrnd> getList(Map<String, Object> params) {
         QueryWrapper wrapper = WrapperUtils.createWrapper(params);
-        return baseMapper.selectList(wrapper);
+        List<T04WorkPopuGrowRateTrnd> list = baseMapper.selectList(wrapper);
+        if (StringUtils.isNotEmpty((String)params.get("order"))) {
+            Collections.reverse(list);
+        }
+        return list;
     }
 }

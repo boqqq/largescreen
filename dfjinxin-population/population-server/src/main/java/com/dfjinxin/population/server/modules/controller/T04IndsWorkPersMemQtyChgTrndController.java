@@ -1,8 +1,9 @@
 package com.dfjinxin.population.server.modules.controller;
 
-import java.util.List;
 import java.util.Map;
 
+import com.dfjinxin.population.server.modules.dto.T04IndsWorkPersMemQtyChgTrndVo;
+import com.dfjinxin.population.server.modules.dto.T04IndsWorkPersMemStruVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -32,9 +33,9 @@ public class T04IndsWorkPersMemQtyChgTrndController implements IT04IndsWorkPersM
      */
     @Override
     public Response list(@RequestParam Map<String, Object> params){
-        List<T04IndsWorkPersMemQtyChgTrnd> list = t04IndsWorkPersMemQtyChgTrndService.getList(params);
+        T04IndsWorkPersMemStruVo result = t04IndsWorkPersMemQtyChgTrndService.getData(params);
 
-        return Response.ok().put("list", list);
+        return Response.ok().put("result", result);
     }
 
 

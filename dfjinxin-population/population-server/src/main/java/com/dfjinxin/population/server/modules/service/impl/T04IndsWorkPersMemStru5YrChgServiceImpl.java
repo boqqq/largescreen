@@ -1,8 +1,11 @@
 package com.dfjinxin.population.server.modules.service.impl;
 
-import com.dfjinxin.commons.core.util.WrapperUtils;
+import com.dfjinxin.population.server.modules.dto.T04IndsWorkPersMemStru5YrChgVo;
+import com.dfjinxin.population.server.modules.dto.T04IndsWorkPersMemStruVo;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
@@ -30,8 +33,34 @@ public class T04IndsWorkPersMemStru5YrChgServiceImpl extends ServiceImpl<T04Inds
     }
 
     @Override
-    public List<T04IndsWorkPersMemStru5YrChg> getList(Map<String, Object> params) {
-        QueryWrapper wrapper = WrapperUtils.createWrapper(params);
-        return baseMapper.selectList(wrapper);
+    public T04IndsWorkPersMemStruVo getData(Map<String, Object> params) {
+
+        List<Map<String, String>> dates = baseMapper.getDateList(params);
+        List<Map<String, String>> list = baseMapper.getList(params);
+
+        List<String> year = new ArrayList<>();
+        List<String> desc = new ArrayList<>();
+
+        List<List<Double>> lists = new ArrayList<>();
+        List<Double> item;
+        dates.stream().forEach(x->{
+            year.add(x.get("dateStat"));
+        });
+        Collections.reverse(year);
+        for (int i = 0; i < year.size(); i ++) {
+            item =  new ArrayList<>();
+            for (int j = 0; j < list.size(); j ++) {
+                if (!desc.contains(list.get(j).get("type"))) {
+                    desc.add(list.get(j).get("type"));
+                }
+                item.add(Double.parseDouble(list.get(j).get(year.get(i))));
+            }
+            lists.add(item);
+        }
+        T04IndsWorkPersMemStruVo result = new T04IndsWorkPersMemStruVo();
+        result.setDesc(desc);
+        result.setYear(year);
+        result.setLists(lists);
+        return result;
     }
 }
