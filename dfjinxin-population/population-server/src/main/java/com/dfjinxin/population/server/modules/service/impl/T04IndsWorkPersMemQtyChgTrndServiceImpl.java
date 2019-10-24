@@ -41,6 +41,7 @@ public class T04IndsWorkPersMemQtyChgTrndServiceImpl extends ServiceImpl<T04Inds
 
         List<String> year = new ArrayList<>();
         List<String> desc = new ArrayList<>();
+        String unit = "";
 
         List<List<Double>> lists = new ArrayList<>();
         List<Double> item;
@@ -49,6 +50,7 @@ public class T04IndsWorkPersMemQtyChgTrndServiceImpl extends ServiceImpl<T04Inds
         });
         for (int i = 0; i < list.size(); i ++) {
             desc.add(list.get(i).get("type"));
+            unit = list.get(i).get("unit");
             for (int j = 0; j < year.size(); j ++) {
                 item =  new ArrayList<>();
                 item.add(Double.parseDouble(i+1+""));
@@ -63,6 +65,7 @@ public class T04IndsWorkPersMemQtyChgTrndServiceImpl extends ServiceImpl<T04Inds
         result.setDesc(desc);
         result.setYear(year);
         result.setLists(lists);
+        result.setUnit(unit);
         return result;
     }
 }
