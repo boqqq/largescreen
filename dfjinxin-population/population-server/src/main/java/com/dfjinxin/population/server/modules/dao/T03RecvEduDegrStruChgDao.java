@@ -21,7 +21,10 @@ import java.util.List;
 public interface T03RecvEduDegrStruChgDao extends BaseMapper<T03RecvEduDegrStruChg> {
 
     @Select("select * from t03_recv_edu_degr_stru_chg where date_stat=#{date} order by type")
-    List<T03RecvEduDegrStruChg> findAll(@Param("date") Integer date);
-    @Select("select distinct(date_stat) from t03_recv_edu_degr_stru_chg")
+    List<T03RecvEduDegrStruChg> findAll(@Param("date") String date);
+    @Select("select * from (select distinct(date_stat) from t03_recv_edu_degr_stru_chg order by date_stat desc limit 5)a order by date_stat")
     List<Integer> findYears();
+
+    @Select("select distinct(edu) from t03_recv_edu_degr_stru_chg  order by type")
+    List<String> edus();
 }
