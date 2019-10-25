@@ -19,12 +19,22 @@ import java.util.List;
 @Mapper
 public interface T03LabrPopuStruChgDao extends BaseMapper<T03LabrPopuStruChg> {
 
-    @Select("select * from t03_labr_popu_stru_chg where type=1 order by date_stat")
+    @Select("select * from (select * from t03_labr_popu_stru_chg where type=1 order by date_stat desc limit 10)a\n" +
+            "ORDER BY date_stat ")
     List<T03LabrPopuStruChg> findTypeOne();
 
-    @Select("select * from t03_labr_popu_stru_chg where type=2 order by date_stat")
+    @Select("select * from (select * from t03_labr_popu_stru_chg where type=2 order by date_stat desc limit 10)a\n" +
+            "ORDER BY date_stat ")
     List<T03LabrPopuStruChg> findTypeTwo();
 
-    @Select("select * from t03_labr_popu_stru_chg where type=3 order by date_stat")
+    @Select("select * from (select * from t03_labr_popu_stru_chg where type=3 order by date_stat desc limit 10)a\n" +
+            "ORDER BY date_stat ")
     List<T03LabrPopuStruChg> findTypeThree();
+
+    @Select("select left(date_stat,4) as date_stat from (select DISTINCT(date_stat) from t03_labr_popu_stru_chg where type=1 order by date_stat desc limit 10)a\n" +
+            "ORDER BY date_stat ")
+    List<String> findYears();
+
+    @Select("select distinct(type) from t03_labr_popu_stru_chg")
+    List<String> findTypes();
 }

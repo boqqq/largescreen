@@ -19,8 +19,8 @@ import java.util.List;
 @Mapper
 public interface T03PrmnPopuAgeStru5YrChgDao extends BaseMapper<T03PrmnPopuAgeStru5YrChg> {
 
-    @Select("select * from t03_prmn_popu_age_stru_5_yr_chg where date_stat=2015 order by age_Period")
+    @Select("select * from t03_prmn_popu_age_stru_5_yr_chg where date_stat=2015 order by REPLACE(left(right(age_Period,3),2),'5岁','65')")
     List<T03PrmnPopuAgeStru5YrChg> find2015All();
-    @Select("select * from t03_prmn_popu_age_stru_5_yr_chg where date_stat=2019 order by age_Period")
+    @Select("select * from t03_prmn_popu_age_stru_5_yr_chg where date_stat=2019 order by REPLACE(left(right(age_Period,3),2),'5岁','65')")
     List<T03PrmnPopuAgeStru5YrChg> find2019All();
 }

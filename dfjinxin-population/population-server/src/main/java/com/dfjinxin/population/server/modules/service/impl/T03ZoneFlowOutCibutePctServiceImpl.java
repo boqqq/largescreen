@@ -11,6 +11,7 @@ import com.dfjinxin.population.server.modules.service.T03ZoneFlowOutCibutePctSer
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -33,15 +34,27 @@ public class T03ZoneFlowOutCibutePctServiceImpl extends ServiceImpl<T03ZoneFlowO
     }
     @Override
     public Map<String, List<String>> findAll(){
-        List<String> list1=t03ZoneFlowOutCibutePctDao.find2016All().stream().map(v->v.getYtyGrowth()).collect(Collectors.toList());
-        List<String> list2=t03ZoneFlowOutCibutePctDao.find2017All().stream().map(v->v.getYtyGrowth()).collect(Collectors.toList());
-        list1.add(0,"0");
-        list2.add(11,"0");
+        List<String> aresList = t03ZoneFlowOutCibutePctDao.areas();
+        List<String> yearsList = t03ZoneFlowOutCibutePctDao.years();
         Map<String,List<String>> resultMap = new HashMap<>();
-        resultMap.put("2016",list1);
-        resultMap.put("2017",list2);
-        resultMap.put("areas",t03ZoneFlowOutCibutePctDao.areas());
-        resultMap.put("years",t03ZoneFlowOutCibutePctDao.years());
+        for(String str:yearsList){
+            List<T03ZoneFlowOutCibutePct> tmpList=t03ZoneFlowOutCibutePctDao.findAll(Integer.parseInt(str));
+            List<String> nameList=t03ZoneFlowOutCibutePctDao.findAll(Integer.parseInt(str)).stream().map(T03ZoneFlowOutCibutePct::getAreaName).collect(Collectors.toList());
+            List<String> tempList = new ArrayList<>();
+            for(String area:aresList){
+                for(T03ZoneFlowOutCibutePct t03 : tmpList){
+                    if(area.equals( t03.getAreaName())){
+                        tempList.add(t03.getYtyGrowth());
+                    }else if(!nameList.contains(area)){
+                        tempList.add("0");
+                        break;
+                    }
+                }
+            }
+            resultMap.put(str,tempList);
+        }
+        resultMap.put("years",yearsList);
+        resultMap.put("areas",aresList);
         return resultMap;
     }
 }

@@ -35,14 +35,17 @@ public class T03RecvEduDegrStruChgServiceImpl extends ServiceImpl<T03RecvEduDegr
 
     @Override
     public Map<String, List<String>> findAll(){
-        List<Integer> yearList = t03RecvEduDegrStruChgDao.findYears();
+        List<String> yearList = t03RecvEduDegrStruChgDao.findYears().stream().map(v->v.toString()).collect(Collectors.toList());
+        List<String> eduList = t03RecvEduDegrStruChgDao.edus();
         Map<String,List<String>> resultMap = new HashMap<>();
-        for(Integer i:yearList){
+        for(String i:yearList){
             List<T03RecvEduDegrStruChg> tmpList = new ArrayList<>();
-            resultMap.put(i.toString(),t03RecvEduDegrStruChgDao.findAll(i)
+            resultMap.put(i,t03RecvEduDegrStruChgDao.findAll(i)
                 .stream().map(T03RecvEduDegrStruChg::getYtyGrowth).collect(Collectors.toList())
             );
         }
+        resultMap.put("years",yearList);
+        resultMap.put("edus",eduList);
         return resultMap;
     }
 }

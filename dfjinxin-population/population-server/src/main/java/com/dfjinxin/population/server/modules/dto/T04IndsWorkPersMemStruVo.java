@@ -13,5 +13,7 @@ public class T04IndsWorkPersMemStruVo {
 
     private List<List<Double>> lists;
 
+    private String unit;
+
 
 }

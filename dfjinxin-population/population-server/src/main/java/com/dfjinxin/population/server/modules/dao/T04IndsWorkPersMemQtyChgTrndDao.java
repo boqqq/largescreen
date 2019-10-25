@@ -32,7 +32,7 @@ public interface T04IndsWorkPersMemQtyChgTrndDao extends BaseMapper<T04IndsWorkP
             "  ) INTO @sql\n" +
             "FROM T04_Inds_Work_Pers_Mem_Qty_Chg_Trnd c;\n" +
             " \n" +
-            "SET @sql = CONCAT('Select c.work_type_desc type,', @sql, \n" +
+            "SET @sql = CONCAT('Select c.work_type_desc type, c.unit,', @sql, \n" +
             "                        ' From (select * from T04_Inds_Work_Pers_Mem_Qty_Chg_Trnd t where t.area_code = ''', @code, ''') c Group by c.work_type_desc');\n" +
             "PREPARE stmt FROM @sql;\n" +
             "EXECUTE stmt;\n" +

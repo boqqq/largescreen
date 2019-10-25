@@ -11,6 +11,7 @@ import com.dfjinxin.population.server.modules.service.T03LabrPopuStruChgService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -44,6 +45,20 @@ public class T03LabrPopuStruChgServiceImpl extends ServiceImpl<T03LabrPopuStruCh
         resultMap.put("one",onrList);
         resultMap.put("two",twoList);
         resultMap.put("three",threeList);
+        List<String> yearList = t03LabrPopuStruChgDao.findYears();
+        List<String> tmpList = t03LabrPopuStruChgDao.findTypes();
+        List<String> typeList = new ArrayList<>();
+        for(String str:tmpList){
+            if(str.equals("1")){
+                typeList.add("0-14岁人口占比");
+            }else if(str.equals("2")){
+                typeList.add("15-64岁人口占比");
+            }else if(str.equals("3")){
+                typeList.add("65+人口占比");
+            }
+        }
+        resultMap.put("years",yearList);
+        resultMap.put("types",typeList);
         return resultMap;
     }
 }

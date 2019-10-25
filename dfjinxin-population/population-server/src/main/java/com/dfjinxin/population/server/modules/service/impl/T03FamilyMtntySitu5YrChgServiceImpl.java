@@ -38,15 +38,15 @@ public class T03FamilyMtntySitu5YrChgServiceImpl extends ServiceImpl<T03FamilyMt
 
     @Override
     public Map findAll(){
-        List<String> ondChildList = t03FamilyMtntySitu5YrChgDao.oneChild().stream().map(T03FamilyMtntySitu5YrChg::getYtyGrowth).collect(Collectors.toList());
-        List<String> twoChildList = t03FamilyMtntySitu5YrChgDao.twoChild().stream().map(T03FamilyMtntySitu5YrChg::getYtyGrowth).collect(Collectors.toList());
-        List<String> threeChildList = t03FamilyMtntySitu5YrChgDao.threeChild().stream().map(T03FamilyMtntySitu5YrChg::getYtyGrowth).collect(Collectors.toList());
-        Map resulMap = new HashMap();
-        resulMap.put("years",t03FamilyMtntySitu5YrChgDao.findYears());
-        resulMap.put("one",ondChildList);
-        resulMap.put("two",twoChildList);
-        resulMap.put("three",threeChildList);
-        return resulMap;
+       List<Integer> yearList = t03FamilyMtntySitu5YrChgDao.findYears();
+       List<T03FamilyMtntySitu5YrChg> typeList = t03FamilyMtntySitu5YrChgDao.birthTypes();
+       Map resultMap=new HashMap();
+       resultMap.put("years",yearList);
+       for(T03FamilyMtntySitu5YrChg fam:typeList){
+           resultMap.put(fam.getBirthType(),t03FamilyMtntySitu5YrChgDao.findAll(Integer.parseInt(fam.getYtyNum()),yearList).stream().map(T03FamilyMtntySitu5YrChg::getYtyGrowth).collect(Collectors.toList()));
+       }
+        resultMap.put("types",typeList.stream().map(T03FamilyMtntySitu5YrChg::getBirthType).collect(Collectors.toList()));
+        return resultMap;
     }
 
 }
