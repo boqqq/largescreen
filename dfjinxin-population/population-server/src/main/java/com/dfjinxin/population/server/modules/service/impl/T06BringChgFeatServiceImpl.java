@@ -28,8 +28,8 @@ public class T06BringChgFeatServiceImpl extends ServiceImpl<T06BringChgFeatDao, 
     }
 
     @Override
-    public List<T06BringChgFeat> select() {
-        List<T06BringChgFeat> page = baseMapper.select();
+    public List<Map<String, Object>> select() {
+        List<Map<String, Object>> page = baseMapper.select();
 
         return page;
     }

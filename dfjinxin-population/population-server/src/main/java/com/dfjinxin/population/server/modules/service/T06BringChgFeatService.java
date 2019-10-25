@@ -18,6 +18,6 @@ public interface T06BringChgFeatService extends IService<T06BringChgFeat> {
 
     PageUtils queryPage(Map<String, Object> params);
 
-    List<T06BringChgFeat> select();
+    List<Map<String, Object>> select();
 }
 

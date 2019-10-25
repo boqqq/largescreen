@@ -42,7 +42,7 @@ public class T06BringChgFeatController implements IT06BringChgFeatController {
      */
     @Override
     public Response select(@RequestParam Map<String, Object> params){
-        List<T06BringChgFeat> page = t06BringChgFeatService.select();
+        List<Map<String, Object>> page = t06BringChgFeatService.select();
 
         return Response.ok().put("page", page);
     }

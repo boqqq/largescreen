@@ -64,23 +64,31 @@ public interface T07QltyFstNmDao extends BaseMapper<T07QltyFstNm> {
             "LIMIT 1) m62")
     List<Map<String, Object>> leftIndex();
 
-    @Select("SELECT m1.acreage1,m11.acreage2,m2.coef1,m21.coef2 FROM \n" +
-            "(SELECT t1.acreage acreage1 FROM T07_Pers_Hous_Area t1\n" +
-            "WHERE t1.type_desc = '本期-乡村'\n" +
-            "ORDER BY t1.date_stat DESC \n" +
-            "LIMIT 1) m1,\n" +
-            "(SELECT t1.acreage acreage2 FROM T07_Pers_Hous_Area t1\n" +
-            "WHERE t1.type_desc = '本期-城镇'\n" +
-            "ORDER BY t1.date_stat DESC\n" +
-            "LIMIT 1) m11,\n" +
-            "(SELECT t2.value coef1  FROM T07_Ege_Coef t2\n" +
-            "WHERE t2.type_desc = '农村恩格尔'\n" +
-            "ORDER BY t2.date_stat DESC\n" +
-            "LIMIT 1) m2,\n" +
-            "(SELECT t21.value coef2 FROM T07_Ege_Coef t21\n" +
-            "WHERE t21.type_desc = '城镇恩格尔'\n" +
-            "ORDER BY t21.date_stat DESC\n" +
-            "LIMIT 1) m21")
+    @Select("SELECT m1.acreage1,m11.acreage2,m2.coef1,m21.coef2,m31.yty1,m32.yty2 FROM\n" +
+            "            (SELECT t1.acreage acreage1 FROM T07_Pers_Hous_Area t1\n" +
+            "            WHERE t1.type_desc = '本期-乡村'\n" +
+            "            ORDER BY t1.date_stat DESC\n" +
+            "            LIMIT 1) m1,\n" +
+            "            (SELECT t1.acreage acreage2 FROM T07_Pers_Hous_Area t1\n" +
+            "            WHERE t1.type_desc = '本期-城镇'\n" +
+            "            ORDER BY t1.date_stat DESC\n" +
+            "            LIMIT 1) m11,\n" +
+            "            (SELECT t2.value coef1  FROM T07_Ege_Coef t2\n" +
+            "            WHERE t2.type_desc = '农村恩格尔'\n" +
+            "            ORDER BY t2.date_stat DESC\n" +
+            "            LIMIT 1) m2,\n" +
+            "            (SELECT t21.value coef2 FROM T07_Ege_Coef t21\n" +
+            "            WHERE t21.type_desc = '城镇恩格尔'\n" +
+            "            ORDER BY t21.date_stat DESC\n" +
+            "            LIMIT 1) m21,\n" +
+            "            (SELECT t31.yty_growth yty1 FROM t07_consm_stru_pct t31\n" +
+            "             WHERE t31.type_desc = '农村居民消费结构占比'\n" +
+            "             ORDER BY t31.date_stat DESC\n" +
+            "             LIMIT 1) m31,\n" +
+            "             (SELECT t32.yty_growth yty2 FROM t07_consm_stru_pct t32\n" +
+            "              WHERE t32.type_desc = '城镇居民消费结构占比'\n" +
+            "            ORDER BY t32.date_stat DESC\n" +
+            "             LIMIT 1) m32")
     List<Map<String, Object>> bottomIndex1();
 
     @Select("SELECT m1.popu_denst,m2.green_area,m3.watr_qty,m4.consm_qty FROM\n" +
