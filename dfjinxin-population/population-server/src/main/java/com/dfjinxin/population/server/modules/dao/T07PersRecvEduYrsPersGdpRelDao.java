@@ -21,8 +21,9 @@ import java.util.Map;
 public interface T07PersRecvEduYrsPersGdpRelDao extends BaseMapper<T07PersRecvEduYrsPersGdpRel> {
 
     @Select("SELECT t.* FROM T07_Pers_Recv_Edu_Yrs_Pers_GDP_Rel t\n" +
-            "WHERE t.area_code = '460000000000'\n" +
-            "ORDER BY t.date_stat")
+            "            WHERE t.area_code = '460000000000'\n" +
+            "            tAND t.date_stat >1999\n" +
+            "            ORDER BY t.date_stat")
     List<T07PersRecvEduYrsPersGdpRel> select(Map<String, Object> params);
 
 }

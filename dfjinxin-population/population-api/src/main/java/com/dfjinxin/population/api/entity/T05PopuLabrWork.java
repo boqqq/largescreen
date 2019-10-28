@@ -7,11 +7,11 @@ import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
 
 /**
- *
+ * 
  *
  * @author zdl
  * @email 492587402@qq.com
- * @date 2019-10-22 10:16:11
+ * @date 2019-10-28 16:41:07
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -36,14 +36,14 @@ public class T05PopuLabrWork implements Serializable {
 	private String dateStat;
 
 	/**
-	 * 劳动生产率
+	 * 
 	 */
-	private String labrWorkRadio;
+	private String annualIncome;
 
 	/**
-	 * 同比增长率
+	 * 
 	 */
-	private String ytyGrowth;
+	private String burdenNum;
 
 	/**
 	 * 统计单位
