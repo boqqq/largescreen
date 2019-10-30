@@ -3,6 +3,7 @@ package com.dfjinxin.population.server.modules.service;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.dfjinxin.commons.core.util.api.PageUtils;
 import com.dfjinxin.population.api.entity.T03ZoneFlowInCibutePct;
+import com.dfjinxin.population.api.entity.T03ZoneFlowOutCibutePct;
 
 import java.util.List;
 import java.util.Map;
@@ -17,6 +18,6 @@ import java.util.Map;
 public interface T03ZoneFlowInCibutePctService extends IService<T03ZoneFlowInCibutePct> {
 
     PageUtils queryPage(Map<String, Object> params);
-    Map<String, List<String>> findAll();
+    List<T03ZoneFlowOutCibutePct> findAll();
 }
 

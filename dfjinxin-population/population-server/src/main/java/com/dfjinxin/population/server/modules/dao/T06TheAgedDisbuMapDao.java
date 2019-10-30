@@ -7,6 +7,7 @@ import org.apache.ibatis.annotations.Select;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * 老年人分布地图
@@ -19,7 +20,12 @@ import java.util.List;
 @Mapper
 public interface T06TheAgedDisbuMapDao extends BaseMapper<T06TheAgedDisbuMap> {
 
-    @Select("SELECT t.area_name,t.unit_cnt,t.rank_no,t.area_code,t.unit FROM t06_the_aged_disbu_map t\n" +
-            "ORDER BY t.rank_no")
-    List<T06TheAgedDisbuMap> select();
+    @Select("SELECT m1.area_code,m1.area_name,m1.unit_cnt,m2.unit_cnt pm,m1.unit FROM \n" +
+            "(SELECT t1.area_name,t1.unit_cnt,t1.rank_no,t1.area_code,t1.unit FROM t06_the_aged_disbu_map t1\n" +
+            "WHERE t1.rank_no = '人口占比') m1,\n" +
+            "(SELECT t2.area_name,t2.unit_cnt,t2.rank_no,t2.area_code,t2.unit FROM t06_the_aged_disbu_map t2\n" +
+            "WHERE t2.rank_no = '排名') m2\n" +
+            "WHERE m1.area_code = m2.area_code\n" +
+            "ORDER BY pm*1 ")
+    List<Map<String, Object>> select();
 }

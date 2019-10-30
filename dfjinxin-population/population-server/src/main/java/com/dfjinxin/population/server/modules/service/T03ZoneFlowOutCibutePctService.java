@@ -17,6 +17,6 @@ import java.util.Map;
 public interface T03ZoneFlowOutCibutePctService extends IService<T03ZoneFlowOutCibutePct> {
 
     PageUtils queryPage(Map<String, Object> params);
-    Map<String, List<String>> findAll();
+    List<T03ZoneFlowOutCibutePct> findAll();
 }
 

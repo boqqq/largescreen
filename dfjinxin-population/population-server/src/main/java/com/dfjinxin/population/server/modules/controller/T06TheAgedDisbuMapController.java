@@ -42,7 +42,7 @@ public class T06TheAgedDisbuMapController implements IT06TheAgedDisbuMapControll
      */
     @Override
     public Response select(@RequestParam Map<String, Object> params){
-        List<T06TheAgedDisbuMap> page = t06TheAgedDisbuMapService.select();
+        List<Map<String, Object>> page = t06TheAgedDisbuMapService.select();
 
         return Response.ok().put("page", page);
     }

@@ -18,6 +18,6 @@ public interface T06TheAgedDisbuMapService extends IService<T06TheAgedDisbuMap> 
 
     PageUtils queryPage(Map<String, Object> params);
 
-    List<T06TheAgedDisbuMap> select();
+    List<Map<String, Object>> select();
 }
 

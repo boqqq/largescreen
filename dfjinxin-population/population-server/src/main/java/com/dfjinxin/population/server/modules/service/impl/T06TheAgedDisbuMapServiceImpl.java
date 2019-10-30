@@ -28,8 +28,8 @@ public class T06TheAgedDisbuMapServiceImpl extends ServiceImpl<T06TheAgedDisbuMa
     }
 
     @Override
-    public List<T06TheAgedDisbuMap> select() {
-        List<T06TheAgedDisbuMap> page = baseMapper.select();
+    public List<Map<String, Object>> select() {
+        List<Map<String, Object>> page = baseMapper.select();
 
         return page;
     }

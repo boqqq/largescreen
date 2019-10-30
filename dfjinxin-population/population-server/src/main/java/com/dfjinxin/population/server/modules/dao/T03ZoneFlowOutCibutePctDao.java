@@ -20,10 +20,12 @@ import java.util.List;
 @Mapper
 public interface T03ZoneFlowOutCibutePctDao extends BaseMapper<T03ZoneFlowOutCibutePct> {
 
-    @Select("select * from (SELECT DISTINCT(date_stat)as date_stat FROM t03_zone_flow_out_cibute_pct order by date_stat desc limit 2)a order by date_stat")
-    List<String> years();
-    @Select("SELECT DISTINCT(area_name) FROM `t03_zone_flow_out_cibute_pct`")
-    List<String> areas();
-    @Select("select * from t03_zone_flow_out_cibute_pct where date_stat=#{date} order by area_code")
-    List<T03ZoneFlowOutCibutePct> findAll(@Param("date") Integer date);
+    @Select("SELECT  t.area_name,t.yty_growth,t.date_stat  FROM t03_zone_flow_out_cibute_pct  t,(\n" +
+            "\n" +
+            "SELECT  m.date_stat  FROM t03_zone_flow_out_cibute_pct  m\n" +
+            "GROUP BY m.date_stat\n" +
+            "ORDER BY m.date_stat desc\n" +
+            "LIMIT 1) t1\n" +
+            "WHERE t.date_stat = t1.date_stat")
+    List<T03ZoneFlowOutCibutePct> findAll();
 }
